@@ -1,8 +1,16 @@
+import type { NextPage } from 'next'
+import ProductList from '../components/ProductList'
 import { getProductsInCollection } from '../lib/shopify'
 
-function Home({}) {
+
+
+const Home: NextPage = (products) => {
+  
+  console.log(products)
   return (
-    <div className='text-3xl'>Hello from shopify next.js</div>
+    <div className='text-3xl'>
+      
+    </div>
   )
 }
 
@@ -14,3 +22,4 @@ export async function getStaticProps() {
 }
 
 export default Home
+
