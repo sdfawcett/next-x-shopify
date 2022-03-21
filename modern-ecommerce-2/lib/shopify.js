@@ -66,7 +66,7 @@ export async function getProductsInCollection() {
 export async function getAllProducts() {
   const query = 
   `{
-    products(first: 25) {
+    products(first: 250) {
       edges {
         node {
           handle
@@ -79,13 +79,43 @@ export async function getAllProducts() {
   const response = await ShopifyData(query)
 
   const slugs = response.data.products.edges ? response.data.products.edges : []
+
   return slugs
 }
 
 export async function getProduct(handle) {
-  const query = 
-  `{
+  const query = `
+  {
     productByHandle(handle: "${handle}") {
+    	collections(first: 1) {
+      	edges {
+          node {
+            products(first: 5) {
+              edges {
+                node {
+                  priceRange {
+                    minVariantPrice {
+                      amount
+                    }
+                  }
+                  handle
+                  title
+                  id
+                  totalInventory
+                  images(first: 5) {
+                    edges {
+                      node {
+                        originalSrc
+                        altText
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+    	}
       id
       title
       handle
@@ -116,6 +146,7 @@ export async function getProduct(handle) {
             }
             title
             id
+            availableForSale
             priceV2 {
               amount
             }
@@ -130,4 +161,123 @@ export async function getProduct(handle) {
   const product = response.data.productByHandle ? response.data.productByHandle : []
 
   return product
+}
+
+export async function createCheckout(id, quantity) {
+  const query = `
+    mutation {
+      checkoutCreate(input: {
+        lineItems: [{ variantId: "${id}", quantity: ${quantity}}]
+      }) {
+        checkout {
+          id
+          webUrl
+        }
+      }
+    }`
+
+  const response = await ShopifyData(query)
+
+  const checkout = response.data.checkoutCreate.checkout ? response.data.checkoutCreate.checkout : []
+
+  return checkout
+}
+
+export async function updateCheckout(id, lineItems) {
+  const lineItemsObject = lineItems.map(item => {
+    return `{
+      variantId: "${item.id}",
+      quantity:  ${item.variantQuantity}
+    }`
+  })
+
+  const query = `
+  mutation {
+    checkoutLineItemsReplace(lineItems: [${lineItemsObject}], checkoutId: "${id}") {
+      checkout {
+        id
+        webUrl
+        lineItems(first: 25) {
+          edges {
+            node {
+              id
+              title
+              quantity
+            }
+          }
+        }
+      }
+    }
+  }`
+
+  const response = await ShopifyData(query)
+
+  const checkout = response.data.checkoutLineItemsReplace.checkout ? response.data.checkoutLineItemsReplace.checkout : []
+
+  return checkout
+}
+
+
+
+
+export async function recursiveCatalog(cursor = '', initialRequest = true) {
+  let data;
+
+  if (cursor !== '') {
+    const query = `{
+      products(after: "${cursor}", first: 250) {
+        edges {
+          cursor
+          node {
+            id
+            handle
+          }
+        }
+        pageInfo {
+          hasNextPage
+        }
+      }
+    }`;
+
+    const response = await ShopifyData(query);
+    data = response.data.products.edges ? response.data.products.edges : [];
+
+    if (response.data.products.pageInfo.hasNextPage) {
+      const num = response.data.products.edges.length;
+      const cursor = response.data.products.edges[num - 1].cursor;
+      console.log('Cursor: ', cursor);
+
+      return data.concat(await recursiveCatalog(cursor));
+    } else {
+      return data;
+    }
+  } else {
+    const query = `{
+      products(first: 250) {
+        edges {
+          cursor
+          node {
+            id
+            handle
+          }
+        }
+        pageInfo {
+          hasNextPage
+        }
+      }
+    }
+    `;
+
+    const response = await ShopifyData(query);
+    data = response.data.products.edges ? response.data.products.edges : [];
+
+    if (response.data.products.pageInfo.hasNextPage) {
+      const num = response.data.products.edges.length;
+      const cursor = response.data.products.edges[num - 1].cursor;
+
+      return data.concat(await recursiveCatalog(cursor));
+    } else {
+      return data;
+    }
+  }
 }
