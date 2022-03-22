@@ -212,6 +212,8 @@ export async function updateCheckout(id, lineItems) {
 
   const response = await ShopifyData(query)
 
+  console.log(response)
+
   const checkout = response.data.checkoutLineItemsReplace.checkout ? response.data.checkoutLineItemsReplace.checkout : []
 
   return checkout
