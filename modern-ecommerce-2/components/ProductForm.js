@@ -69,9 +69,8 @@ export default function ProductForm({ product }) {
          <button 
          onClick={() => {
             addToCart(selectedVariant)
-            console.log(selectedVariant)
          }}
-         className='bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800'>Add To Cart</button>
+         className='bg-black rounded-lg text-white px-2 py-3 mt-3 hover:bg-gray-800'>Add To Cart</button>
     </div>
   )
 }
