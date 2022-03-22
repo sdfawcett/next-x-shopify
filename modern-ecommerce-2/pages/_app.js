@@ -1,5 +1,8 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
+import 'swiper/swiper.scss'
+import 'swiper/components/navigation/navigation.scss'
+import 'swiper/components/pagination/pagination.scss'
 import ShopProvider from '../context/shopContext'
 import { useRouter } from 'next/router'
 
