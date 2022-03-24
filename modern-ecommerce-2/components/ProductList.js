@@ -2,7 +2,18 @@ import ProductCard from "./ProductCard"
 
 const ProductList = ({products}) => {
   return (
-    <div className='bg-white'>
+    <section className="border-t border-transparent dark:border-gray-800">
+      <div className="py-12 md:py-20">
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <h1 className="h2 font-red-hat-display mb-4">From rough design files, to powerful products</h1>
+            <p className="text-xl text-gray-600 dark:text-gray-400">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+          </div>
+
+        </div>
         <div className='max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8'>
             <h2 className='text-2xl font-extrabold text-gray-900 mb-6'>
               Products
@@ -15,7 +26,8 @@ const ProductList = ({products}) => {
             }
             </div>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 
