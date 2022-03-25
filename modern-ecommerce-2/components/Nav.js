@@ -33,8 +33,25 @@ export default function Nav() {
       }
     }, [darkMode]);
 
+    //nav opacity change on scroll
+    const [clientWindowHeight, setClientWindowHeight] = useState(false);
+
+    const handleScroll = () => {
+      if (window.scrollY >= 50) {
+        setClientWindowHeight(true)
+      } else {
+        setClientWindowHeight(false)
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll); 
+      
+    });
+
   return (
-    <header className="border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75">
+
+    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'sticky top-0 z-20 dark:bg-gray-900 dark:text-gray-100 bg-transparent'}>
       <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl">
         <Link href="/" passHref>
           <a className="cursor-pointer">
@@ -77,5 +94,6 @@ export default function Nav() {
         <MiniCart cart={cart} />
       </div>
     </header>
+
   )
 }

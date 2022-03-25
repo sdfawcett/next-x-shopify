@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react'
 export default function ProductOptions({ name, values, selectedOptions, setOptions, productInventory, selectedVariant }) {
   
   return (
-    <fieldset className="mt-3">
+    <fieldset className="mt-3 mb-3">
       <legend className="text-xl font-semibold">{name}</legend>
-      <div className="inline-flex items-center flex-wrap">
+      <div className="inline-flex items-center flex-nowrap">
         {
           values.map(value => {
             const id = `option-${name}-${value}`
@@ -24,7 +24,7 @@ export default function ProductOptions({ name, values, selectedOptions, setOptio
                     setOptions(name, value)
                   }}
                 />
-                <div className={`p-2 mt-3 text-lg rounded-full block cursor-pointer mr-3 ${checked ? "text-white bg-gray-900" : "text-gray-900 bg-gray-200"}`}>
+                <div className={`p-2 mt-3 text-lg block cursor-pointer hover:bg-gray-300 mr-3 ${checked ? "text-white bg-gray-900 dark:text-gray-900 dark:bg-white rounded border border-gray-900" : "text-gray-900 rounded border border-gray-900 dark:text-white dark:border-white"}`}>
                   <span className="px-2">{value}</span>
                 </div>
               </label>

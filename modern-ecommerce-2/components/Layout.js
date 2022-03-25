@@ -3,6 +3,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 export default function Layout({ children }) {
+
   return (
     
     <div className='font-inter antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 tracking-tight'>
