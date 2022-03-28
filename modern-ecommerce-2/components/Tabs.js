@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image'
-import VideoThumb from '../images/video-thumb.jpg';
-import PlayBtn from '../images/play-button.svg';
 import OilImage from '../images/cbd-tincture.webp';
 import GummiesImage from '../images/cbd-gummies.webp';
 import CreamImage from '../images/cbd-cream.webp';
@@ -61,14 +59,9 @@ export default function Tabs() {
                   className={`lg:w-full font-medium px-3 py-2 bg-white hover:bg-gray-50 shadow dark:bg-gray-800 dark:hover:bg-gray-700 transition duration-150 ease-in-out rounded flex items-center justify-center lg:justify-start m-1 lg:mx-0 ${category === '5' && 'bg-teal-600 hover:bg-teal-500 dark:bg-teal-600 dark:hover:bg-teal-600 dark:bg-opacity-25 dark:hover:bg-opacity-25'}`}
                   onClick={() => setCategory('5')}
                >
-                  <span className={category === '5' ? 'text-gray-600 dark:text-teal-400' : 'text-gray-600 dark:text-gray-300'}>Superfoods</span>
+                  <span className={category === '5' ? 'text-gray-600 dark:text-teal-400' : 'text-gray-600 dark:text-gray-300'}>Salve</span>
                </button>
-               <button
-                  className={`lg:w-full font-medium px-3 py-2 bg-white hover:bg-gray-50 shadow dark:bg-gray-800 dark:hover:bg-gray-700 transition duration-150 ease-in-out rounded flex items-center justify-center lg:justify-start m-1 lg:mx-0 ${category === '6' && 'bg-teal-600 hover:bg-teal-500 dark:bg-teal-600 dark:hover:bg-teal-600 dark:bg-opacity-25 dark:hover:bg-opacity-25'}`}
-                  onClick={() => setCategory('6')}
-               >
-                  <span className={category === '6' ? 'text-gray-600 dark:text-teal-400' : 'text-gray-600 dark:text-gray-300'}>Salve</span>
-               </button>
+
             </div>
 
             {/* Videos */}
@@ -81,9 +74,18 @@ export default function Tabs() {
                         <div className="flex flex-col">
                         <Image src={OilImage} alt="CBD Oil" />
                         </div>
+
                         <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 1</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Before use, shake your bottle of full-spectrum hemp extract CBD oil well.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 2</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Fill the dropper of your high-quality CBD oil to .5ml (one serving) and release the oil under the tongue.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 3</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Hold or swish for 60 seconds for best absorption. Store your cannabidiol tincture in a dark, room temperature place, away from direct sunlight.</p>
                         </div>
+
                      </div>
                      
                   </div>
@@ -95,9 +97,18 @@ export default function Tabs() {
                         <div className="flex flex-col">
                         <Image src={GummiesImage} alt="CBD Gummies" />
                         </div>
+
                         <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 1</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Take an organic hemp CBD gummy from container.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 2</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Pop the gummy in your mouth and chew.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 3</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Suck on it or chew slowly before swallowing for maximum absorption of CBD goodness.</p>
                         </div>
+
                      </div>
                   </div>
                   </div>
@@ -107,9 +118,18 @@ export default function Tabs() {
                         <div className="flex flex-col">
                         <Image src={CreamImage} alt="CBD Cream" />
                         </div>
+
                         <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 1</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Apply a fingertip-sized blob of the CBD topical cream to the desired area.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 2</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Rub into clean, dry skin until fully absorbed.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 3</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Use more if needed, but try to be consistent.</p>
                         </div>
+
                      </div>
                   </div>
                   </div>
@@ -119,33 +139,40 @@ export default function Tabs() {
                         <div className="flex flex-col">
                         <Image src={PetTreatsImage} alt="CBD Pet Treats" />
                         </div>
+
                         <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 1</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Check the back of the package to see the best serving size for your pet.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 2</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Grab a treat (or break one to size).</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 3</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Make your pet's day!</p>
                         </div>
+
                      </div>
                   </div>
                   </div>
+
                   <div className={['5'].includes(category) ? undefined : 'hidden'}>
-                  <div className="relative">
-                     <div className="grid grid-cols-2 gap-2">
-                        <div className="flex flex-col">
-                        <Image src={SuperfoodImage} alt="CBD Superfood" />
-                        </div>
-                        <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
-                        </div>
-                     </div>
-                  </div>
-                  </div>
-                  <div className={['6'].includes(category) ? undefined : 'hidden'}>
                   <div className="relative">
                      <div className="grid grid-cols-2 gap-2">
                         <div className="flex flex-col">
                         <Image src={SalveImage} alt="CBD Salve" />
                         </div>
+
                         <div className="flex flex-col">
-                           <div className="text-xl font-bold font-red-hat-display">Step 1</div>
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 1</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Twist the bottom of the tube to raise the salve as needed.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 2</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Apply to clean, dry skin.</p>
+
+                           <div className="text-xl font-bold font-red-hat-display mb-1">Step 3</div>
+                           <p className='text-l text-gray-600 dark:text-gray-400 mb-2.5'>Rub in to help absorption.</p>
                         </div>
+
                      </div>
                   </div>
                   </div>

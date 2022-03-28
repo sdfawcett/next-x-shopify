@@ -6,7 +6,6 @@ import Carousel from "../components/Carousel"
 import Tabs from "../components/Tabs"
 import AOS from 'aos';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
-import FeaturesAnimation from '../components/FeaturesAnimation';
 
 export default function Home({products}) {
 
@@ -28,7 +27,6 @@ export default function Home({products}) {
       <Carousel />
       <Tabs />
       <TestimonialsCarousel />
-      <FeaturesAnimation />
     </>
   )
 }

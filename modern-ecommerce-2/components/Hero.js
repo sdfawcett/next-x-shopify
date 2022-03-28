@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import MockupImage from '../images/mockup-image-01.jpg';
-import IphoneMockup from '../images/iphone-mockup.png';
 import WomanHeroBg from '../images/woman-hero-bg.jpg';
-import HeroImage from '../images/about-hero.jpg';
 
 
 export default function Hero() {
