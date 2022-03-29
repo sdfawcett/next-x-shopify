@@ -19,10 +19,10 @@ export default function Hero() {
           />
         
 
-        <div class="flex h-screen relative z-1">
-          <div class="m-auto">
-            <h3 class='h2 font-red-hat-display mb-4'>Pure &#38; Premium CBD</h3>
-            <p class='text-xl text-gray-600 dark:text-gray-400'>Naturally grown. Lab certified. Dependable Results.</p>
+        <div className="flex h-screen relative z-1">
+          <div className="m-auto">
+            <h3 className='h2 font-red-hat-display mb-4'>Pure &#38; Premium CBD</h3>
+            <p className='text-xl text-gray-600 dark:text-gray-400'>Naturally grown. Lab certified. Dependable Results.</p>
             <div className="mt-8" data-aos="fade-down" data-aos-delay="300">
               <Link href='#anchor-section'><a className="btn text-white bg-teal-500 hover:bg-teal-400 ml-3">Request code</a></Link>
             </div>

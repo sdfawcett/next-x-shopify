@@ -21,7 +21,7 @@ export default function ProductPageContent({ product }) {
   return (
     <div>
 
-      <div class="flex flex-col md:flex-row mx-14">
+      <div className="flex flex-col md:flex-row mx-14">
 
           <div className="relative w-full md:w-1/2 min-h-[80vh] h-[80vh]">
             <Swiper
