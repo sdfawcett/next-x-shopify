@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import Transition from '../utils/Transition';
+import Transition from '../utils/transition';
 
 export default function TestimonialsCarousel() {
 
