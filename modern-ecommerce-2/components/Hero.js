@@ -7,30 +7,26 @@ export default function Hero() {
   return (
     <section>
 
-      <div className="hero h-screen w-full relative text-center">
-          <Image
+      <div class="hero min-h-screen">
+        
+      <Image
             src={WomanHeroBg}
             alt="Woman holding CBD tincture bottle"
             className='object-center'
             layout="fill" 
             objectFit="cover" 
             placeholder="blur"
+            objectPosition="center"
 
-          />
-        
-
-        <div className="flex h-screen relative z-1">
-          <div className="m-auto">
-            <h3 className='h2 font-red-hat-display mb-4'>Pure &#38; Premium CBD</h3>
-            <p className='text-xl text-gray-600 dark:text-gray-400'>Naturally grown. Lab certified. Dependable Results.</p>
-            <div className="mt-8" data-aos="fade-down" data-aos-delay="300">
-              <Link href='#anchor-section'><a className="btn text-white bg-teal-500 hover:bg-teal-400 ml-3">Request code</a></Link>
-            </div>
+        />
+        <div class="hero-content z-10 text-center dark:border dark:border-gray-800 mx-3.5">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl h2 font-bold font-red-hat-display dark:text-gray-800">Hello there</h1>
+            <p class="mb-5 dark:text-gray-700">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
-
-
 
     </section>
   )

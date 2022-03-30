@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useContext, useState, useEffect } from 'react'
 import { CartContext } from '../context/shopContext'
 import MiniCart from './MiniCart'
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa'
 
 export default function Nav() {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext)
@@ -52,7 +52,7 @@ export default function Nav() {
 
   return (
 
-    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'sticky top-0 z-20 dark:bg-gray-900 dark:text-gray-100'}>
+    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'sticky top-0 z-20'}>
       <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl">
 
         <div>
