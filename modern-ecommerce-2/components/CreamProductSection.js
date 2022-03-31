@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import WomanTakingOil from '../images/taking-cbd-oil.gif';
-import GummyHand from '../images/gummy-hand.webp';
+import CreamSmeared from '../images/cream-smear.webp';
+import CreamProcess from '../images/cream-process.webp';
 
-export default function ProductSection() {
+export default function CreamProductSection() {
    
   return (
    <section>
@@ -14,8 +14,8 @@ export default function ProductSection() {
                <Image
                   className="absolute inset-0 object-cover w-full h-full"
                   layout='fill'
-                  src={WomanTakingOil}
-                  alt="woman taking cbd oil"
+                  src={CreamSmeared}
+                  alt="woman eating gummy worm"
                />
                </div>
             </div>
@@ -29,15 +29,19 @@ export default function ProductSection() {
                <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
       
                <p className="mt-4 text-gray-600">
-                  Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
+                  Often referred to as CBD, cannabidiol is a naturally occurring substance found throughout various strains of the Cannabis Sativa plant. In specific, it tends to have the highest concentration in industrial hemp.
                </p>
 
                <p className="mt-4 text-gray-600">
-                  CBD is also different from THC, the other main cannabinoid in cannabis, in that it does not produce psychoactive effects or create a high.
+                  CBD is often confused with THC, the psychoactive compound in marijuana. However, they couldn’t be any more dissimilar. While THC induces a state of “high” in its users, CBD does not. On the contrary, it actually boosts focus, balance, and overall wellness.
                </p>
 
                <p className="mt-4 text-gray-600">
-                  Instead, CBD has been found to have a wide range of benefits. That’s because humans have what’s called an endocannabinoid system, a network of receptors that use CBD. Many have found CBD to be an effective remedy for everyday life.
+                  So how does it work? The answer lies in the endocannabinoid system (ECS). It is essentially a series of receptors that can be found throughout all of the major organs of our bodies. The ECS utilizes cannabinoids for a wide range of functions.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  As a result, CBD products have become a highly studied and discussed topic in science today.
                </p>
 
                <p className="mt-4 text-gray-600">
@@ -67,22 +71,18 @@ export default function ProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
+               <h2 className="text-2xl font-bold sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
-                  Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
+                  Quality has always been the number one priority at Penguin. That’s because we believe that our customer’s experience comes first.  So to make sure that our products live up to our standards, we get involved in every step of the process.
                </p>
 
                <p className="mt-4 text-gray-600">
-                  CBD is also different from THC, the other main cannabinoid in cannabis, in that it does not produce psychoactive effects or create a high.
+                  From the farm to the lab, our hemp remains pure and free from any synthetic chemical additives. It is processed through our cutting-edge, CO2 extraction technology until it becomes a refined, broad-spectrum oil.
                </p>
 
                <p className="mt-4 text-gray-600">
-                  Instead, CBD has been found to have a wide range of benefits. That’s because humans have what’s called an endocannabinoid system, a network of receptors that use CBD. Many have found CBD to be an effective remedy for everyday life.
-               </p>
-
-               <p className="mt-4 text-gray-600">
-                  This product will not get you "high." 🎉
+                  This oil is then combined with other ingredients to make our CBD Cream. It is loaded with terpenes to promote skin-cell rejuvenation.
                </p>
       
                <a
@@ -99,8 +99,8 @@ export default function ProductSection() {
                <Image
                   className="absolute inset-0 object-cover w-full h-full"
                   layout='fill'
-                  src={GummyHand}
-                  alt="hand picking up gummy"
+                  src={CreamProcess}
+                  alt="hand getting cbd cream from jar"
                />
                </div>
             </div>
