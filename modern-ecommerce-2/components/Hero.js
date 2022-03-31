@@ -21,8 +21,8 @@ export default function Hero() {
         />
         <div class="hero-content z-10 text-center dark:border dark:border-gray-800 mx-3.5">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl h2 font-bold font-red-hat-display dark:text-gray-800">Premium CBD Products You Can Trust</h1>
-            <p class="mb-5 dark:text-gray-700">Made from the highest quality, lab tested, Oregon hemp plants</p>
+            <h1 class="mb-5 text-5xl h2 font-bold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
+            <p class="mb-5 dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants</p>
             <button class="btn btn-primary">Shop Now</button>
           </div>
         </div>

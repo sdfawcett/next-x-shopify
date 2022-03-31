@@ -135,33 +135,22 @@ export default function ProductForm({ product }) {
             
             <div className="w-full">
               <input type="checkbox" name="panel" id="panel-1" className="hidden" />
-              <label htmlFor="panel-1" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left">Panel 1</label>
+              <label htmlFor="panel-1" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left cursor-pointer">Sourcing</label>
               <div className="accordion__content overflow-hidden bg-grey-lighter">
-                <h2 className="accordion__header pt-4 pl-4 text-left">Header</h2>
-                <p className="accordion__body p-4 text-left" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                <h2 className="accordion__header pt-4 pl-4 text-left">Only The Best</h2>
+                <p className="accordion__body p-4 text-left" id="panel1">Sourcing is important when it comes to CBD products. All of our hemp comes from farms in Oregon. We chose this state because of the quality of the soil, as well as their high regulation standards for cultivation and testing.</p>
               </div>
             </div>
             
             <div className="w-full">
               <input type="checkbox" name="panel" id="panel-2" className="hidden" />
-              <label htmlFor="panel-2" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left">Panel 2</label>
+              <label htmlFor="panel-2" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left cursor-pointer">Return Policy</label>
               <div className="accordion__content overflow-hidden bg-grey-lighter">
-                <h2 className="accordion__header pt-4 pl-4 text-left">Header</h2>
-                <p className="accordion__body p-4 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                <h2 className="accordion__header pt-4 pl-4 text-left">Return Unopened Products</h2>
+                <p className="accordion__body p-4 text-left">A full refund is available for all UNOPENED products. All you have to do is ship the products back within 30 days of your purchase. A shipping label is provided for returns upon request.</p>
               </div>
             </div>
-            
-            <div className="w-full">
-              <input type="checkbox" name="panel" id="panel-3" className="hidden" />
-              <label htmlFor="panel-3" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left">Panel 3</label>
-              <div className="accordion__content overflow-hidden bg-grey-lighter">
-                <h2 className="accordion__header pt-4 pl-4 text-left">Header</h2>
-                <p className="accordion__body p-4 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
+          
           </div>
           </div>
         </div>

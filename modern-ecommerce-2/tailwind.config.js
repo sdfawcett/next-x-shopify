@@ -78,8 +78,10 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        'red-hat-display': ['"Red Hat Display"', 'sans-serif'],
+        inter: ["'Inter', 'sans-serif'"],
+        redhatdisplay: ["'Red Hat Display', 'sans-serif'"],
+        karla: ["'Karla', 'sans-serif'"],
+        lora: ["'Lora', 'serif'"],
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1.5' }],
