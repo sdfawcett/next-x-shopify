@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
+import BackButton from './BackButton'
 import ProductForm from './ProductForm'
 import RecommendedList from './RecommendedList'
 
@@ -20,7 +21,7 @@ export default function ProductPageContent({ product }) {
 
   return (
     <div>
-
+      <BackButton />
       <div className="flex flex-col md:flex-row mx-14">
 
           <div className="relative w-full md:w-1/2 min-h-[80vh] h-[80vh]">

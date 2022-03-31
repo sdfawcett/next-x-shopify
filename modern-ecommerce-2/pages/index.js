@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { getProductsInCollection } from "../lib/shopify"
 import ProductList from '../components/ProductList'
+import Companies from '../components/Companies'
 import Hero from "../components/Hero"
 import Carousel from "../components/Carousel"
 import Tabs from "../components/Tabs"
@@ -21,6 +22,7 @@ export default function Home({products}) {
   return (
     <>
       <Hero />
+      <Companies />
       <div className="text-3xl">
         <ProductList products={products} />
       </div>

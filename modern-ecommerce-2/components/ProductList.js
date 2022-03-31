@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard"
 
 const ProductList = ({products}) => {
   return (
-    <section className="border-transparent dark:border-gray-800">
+    <section id="product-section" className="border-transparent dark:border-gray-800">
       <div className="py-12 md:py-20">
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
