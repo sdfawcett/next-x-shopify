@@ -75,6 +75,29 @@ input[type=range]::-moz-focus-outer {
 	border: 0;
 }
 
+/* product page accordion */
+
+.accordion label:after {
+	content: '+';
+	position: absolute;
+	right: 1em;
+	color: gray;
+ }
+ 
+ .accordion input:checked + label:after {
+	content: '-';
+	line-height: .8em;
+	color: gray;
+ }
+ 
+ .accordion .accordion__content{
+	max-height: 0em;
+	transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+ }
+ .accordion input[name='panel']:checked ~ .accordion__content {
+	/* Get this as close to what height you expect */
+	max-height: 50em;
+ }
 
 /* hero image background gradient */
 

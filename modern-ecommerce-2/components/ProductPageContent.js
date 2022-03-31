@@ -4,8 +4,25 @@ import SwiperCore, { Navigation, Pagination } from 'swiper'
 import BackButton from './BackButton'
 import ProductForm from './ProductForm'
 import RecommendedList from './RecommendedList'
+import OilProductSection from './OilProductSection'
+import CreamProductSection from './CreamProductSection'
+import DogOilProductSection from './DogOilProductSection'
+import CatOilProductSection from './CatOilProductSection'
+import DogTreatProductSection from './DogTreatProductSection'
+import CatTreatProductSection from './CatTreatProductSection'
+import GummiesProductSection from './GummiesProductSection'
+import CapsuleProductSection from './CapsuleProductSection'
 
 export default function ProductPageContent({ product }) {
+
+  const cbdOil = product.title === 'CBD Oil'
+  const cbdCream = product.title === 'CBD Cream'
+  const dogOil = product.title === 'Dog CBD Oil'
+  const catOil = product.title === 'Cat CBD Oil'
+  const dogTreat = product.title === 'CBD Dog Treats'
+  const catTreat = product.title === 'CBD Cat Treats'
+  const cbdGummy = product.title === 'CBD Gummies'
+  const cbdCapsules = product.title === 'CBD Capsules'
 
   const images = []
 
@@ -21,10 +38,11 @@ export default function ProductPageContent({ product }) {
 
   return (
     <div>
-      <BackButton />
+      
       <div className="flex flex-col md:flex-row mx-14">
-
+      
           <div className="relative w-full md:w-1/2 min-h-[80vh] h-[80vh]">
+          <BackButton />
             <Swiper
               style={{ '--swiper-navigation-color': '#000', '--swiper-pagination-color': '#000' }}
               navigation
@@ -42,6 +60,9 @@ export default function ProductPageContent({ product }) {
 
       </div>
     </div>
+
+      {cbdOil ? <OilProductSection /> : cbdCream ? <CreamProductSection /> : dogOil ? <DogOilProductSection /> : catOil ? <CatOilProductSection /> : dogTreat ? <DogTreatProductSection /> : catTreat ? <CatTreatProductSection /> : cbdGummy ? <GummiesProductSection /> : cbdCapsules ? <CapsuleProductSection /> : <OilProductSection />}
+
       
       <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
     </div>

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CartContext } from '../context/shopContext'
 import { formatter } from '../utils/helpers'
+import EmptyCartLady from '../images/shopping-cart-lady.webp';
 
 export default function MiniCart({ cart }) {
    const cancelButtonRef = useRef()
@@ -119,9 +120,16 @@ return (
                             </li>
                           ))}
                         </ul> : 
+
                         <div>
-                          <p>Nothing in the cart</p>
+                          <Image
+                            src={EmptyCartLady} 
+                            alt="Woman with CBD gummies"
+                          />
+
+                          <h3 className='text-center text-gray-600'>Ready to add something to your cart?</h3>
                         </div>
+
                         }
                         
                       </div>

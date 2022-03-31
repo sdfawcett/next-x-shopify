@@ -1,6 +1,5 @@
 import Link from 'next/link'
-
-import React from 'react'
+import { MdArrowBack } from 'react-icons/md'
 
 export default function BackButton() {
 
@@ -8,7 +7,7 @@ export default function BackButton() {
   return (
    <>
       <Link href="/#product-section">
-         <a>Keep Shopping</a>
+         <a><MdArrowBack className='inline' /> Back To Products</a>
       </Link>
    </>
   )

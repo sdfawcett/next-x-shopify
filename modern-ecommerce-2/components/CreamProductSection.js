@@ -1,0 +1,112 @@
+import Image from 'next/image'
+import WomanTakingOil from '../images/taking-cbd-oil.gif';
+import GummyHand from '../images/gummy-hand.webp';
+
+export default function ProductSection() {
+   
+  return (
+   <section>
+      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+
+         <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+            <div className="relative z-10 lg:py-16">
+               <div className="relative h-64 sm:h-80 lg:h-full">
+               <Image
+                  className="absolute inset-0 object-cover w-full h-full"
+                  layout='fill'
+                  src={WomanTakingOil}
+                  alt="woman taking cbd oil"
+               />
+               </div>
+            </div>
+      
+            <div className="relative flex items-center bg-gray-100">
+               <span
+               className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
+               ></span>
+      
+               <div className="p-8 sm:p-16 lg:p-24">
+               <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
+      
+               <p className="mt-4 text-gray-600">
+                  Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  CBD is also different from THC, the other main cannabinoid in cannabis, in that it does not produce psychoactive effects or create a high.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  Instead, CBD has been found to have a wide range of benefits. That’s because humans have what’s called an endocannabinoid system, a network of receptors that use CBD. Many have found CBD to be an effective remedy for everyday life.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  This product will not get you "high." 🎉
+               </p>
+      
+               <a
+                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
+                  href="/contact"
+               >
+                  Get in Touch
+               </a>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+         <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+            
+      
+            <div className="relative flex items-center bg-gray-100">
+               <span
+               className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
+               ></span>
+      
+               <div className="p-8 sm:p-16 lg:p-24">
+               <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
+      
+               <p className="mt-4 text-gray-600">
+                  Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  CBD is also different from THC, the other main cannabinoid in cannabis, in that it does not produce psychoactive effects or create a high.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  Instead, CBD has been found to have a wide range of benefits. That’s because humans have what’s called an endocannabinoid system, a network of receptors that use CBD. Many have found CBD to be an effective remedy for everyday life.
+               </p>
+
+               <p className="mt-4 text-gray-600">
+                  This product will not get you "high." 🎉
+               </p>
+      
+               <a
+                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
+                  href="/contact"
+               >
+                  Get in Touch
+               </a>
+               </div>
+            </div>
+
+            <div className="relative z-10 lg:py-16">
+               <div className="relative h-64 sm:h-80 lg:h-full">
+               <Image
+                  className="absolute inset-0 object-cover w-full h-full"
+                  layout='fill'
+                  src={GummyHand}
+                  alt="hand picking up gummy"
+               />
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+  )
+}
