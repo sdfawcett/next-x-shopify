@@ -4,9 +4,11 @@ import ProductList from '../components/ProductList'
 import Companies from '../components/Companies'
 import Hero from "../components/Hero"
 import Carousel from "../components/Carousel"
+import FooterFade from "../components/FooterFade"
 import Tabs from "../components/Tabs"
 import AOS from 'aos';
-import TestimonialsCarousel from '../components/TestimonialsCarousel';
+import Testimonials from '../components/Testimonials';
+import Features from '../Features';
 
 export default function Home({products}) {
 
@@ -26,9 +28,11 @@ export default function Home({products}) {
       <div className="text-3xl">
         <ProductList products={products} />
       </div>
+      <Features />
       <Carousel />
       <Tabs />
-      <TestimonialsCarousel />
+      <Testimonials />
+      <FooterFade />
     </>
   )
 }

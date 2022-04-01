@@ -81,7 +81,7 @@ export default function Nav() {
                 <div className="form-switch flex flex-col justify-center ml-3 mr-3">
                   <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
                   <label className="relative" htmlFor="light-switch-desktop">
-                    <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 shadow-sm z-10" aria-hidden="true"></span>
+                    <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-100 dark:to-white shadow-sm z-10" aria-hidden="true"></span>
 
                     <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
                       <g className="fill-current text-white" fillRule="nonzero" opacity=".88">

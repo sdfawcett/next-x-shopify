@@ -14,23 +14,23 @@ export default function Companies() {
       <div className="pb-12">
          <div className="grid grid-cols-2 gap-4 lg:gap-6 md:grid-cols-4 text-center" data-aos-id-stats>
             {/* 1st item */}
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]">
-            <div className="text-gray-600 dark:text-gray-400">"World's finest CBD brand for relaxation."</div>
+            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]">
+            <div className="text-gray-600 dark:text-dark-blue">"World's finest CBD brand for relaxation."</div>
             <Image className="transition-opacity duration-300" width="100" height="50" src={RollingStoneLogo} alt="Rolling Stone Magazine" />
             </div>
             {/* 2nd item */}
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="100">
-            <div className="text-gray-600 dark:text-gray-400">"The hottest CBD brand around right now."</div>
+            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="100">
+            <div className="text-gray-600 dark:text-dark-blue">"The hottest CBD brand around right now."</div>
             <Image className="transition-opacity duration-300" width="100" height="50" src={MaximLogo} alt="Maxim Magazine" />
             </div>
             {/* 3rd item */}
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="200">
-            <div className="text-gray-600 dark:text-gray-400">"Thanks to Bomb Botanicals, we're living our best lives."</div>
+            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="200">
+            <div className="text-gray-600 dark:text-dark-blue">"Thanks to Bomb Botanicals, we're living our best lives."</div>
             <Image className="transition-opacity duration-300" width="100" height="50" src={TimeLogo} alt="Time Magazine" />
             </div>
             {/* 4th item */}
-            <div className="bg-white dark:bg-gray-800 py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="300">
-            <div className="text-gray-600 dark:text-gray-400">"One of the best THC-free CBD oils."</div>
+            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="300">
+            <div className="text-gray-600 dark:text-dark-blue">"One of the best THC-free CBD oils that we've ever tried."</div>
             <Image className="transition-opacity duration-300" width="100" height="50" src={VarietyLogo} alt="Variety Magazine" />
             </div>
          </div>

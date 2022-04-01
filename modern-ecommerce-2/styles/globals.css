@@ -130,6 +130,38 @@ input[type=range]::-moz-focus-outer {
 	content: '';
  }
 
+ /* footer image fade */
+
+.footer-fade {
+	transition: background-color 1s;
+}
+
+.footer-fade::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #fff 100%);
+  bottom: 0;
+  left:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  content: '';
+}
+
+.dark .footer-fade::after {
+	display: block;
+	position: absolute;
+	background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #BFD6AF 100%);
+	bottom: 0;
+	left:0;
+	right:0;
+	height: 100%;
+	width: 100%;
+	content: '';
+ }
+
+ 
+
 /* theme styles */
 .form-input:focus,
 .form-textarea:focus,
@@ -179,7 +211,7 @@ input[type=range]::-moz-focus-outer {
 }
 
 .form-switch input[type="checkbox"].light-switch + label {
-	@apply bg-teal-500;
+	@apply bg-dark-blue;
 }
 
 .dark .form-switch input[type="checkbox"].light-switch + label > span:first-child {
@@ -289,7 +321,7 @@ input[type=range]::-moz-focus-outer {
 }
 
 .form-switch input[type="checkbox"]:checked + label {
-	@apply bg-teal-500;
+	@apply bg-dark-blue;
 }
 
 .form-switch input[type="checkbox"]:checked + label > span:first-child {

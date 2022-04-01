@@ -67,6 +67,11 @@ module.exports = {
           800: '#97266D',
           900: '#702459',
         },
+        'light-green': '#BFD6AF',
+        'darker-green': '#AFCABC',
+        'cool-gray': '#687275',
+        'dark-blue': '#3E3649',
+        'contrast-gray': '#F2F0F4',
       },
       outline: {
         blue: '2px solid rgba(0, 112, 244, 0.5)',

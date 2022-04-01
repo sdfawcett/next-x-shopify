@@ -4,8 +4,6 @@ import OilImage from '../images/cbd-tincture.webp';
 import GummiesImage from '../images/cbd-gummies.webp';
 import CreamImage from '../images/cbd-cream.webp';
 import PetTreatsImage from '../images/cbd-pet-treats.webp';
-import SuperfoodImage from '../images/cbd-superfood.webp';
-import SalveImage from '../images/cbd-salve.webp';
 
 export default function Tabs() {
 
@@ -14,7 +12,7 @@ export default function Tabs() {
   return (
    <section className="relative border-t border-transparent dark:border-gray-800">
       {/* Background gradient */}
-      <div className="absolute inset-0 h-128 dark:opacity-25 bg-gradient-to-b from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 h-128 pointer-events-none" aria-hidden="true"></div>
       {/* End background gradient */}
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
       <div className="py-12 md:py-20">

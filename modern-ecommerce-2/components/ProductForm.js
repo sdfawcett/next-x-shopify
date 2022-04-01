@@ -131,27 +131,103 @@ export default function ProductForm({ product }) {
 
         <div className="flex flex-wrap pt-5 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-full mx-auto">
           <div className="w-full p-4">
-          <div className="accordion flex flex-col">
-            
-            <div className="w-full">
-              <input type="checkbox" name="panel" id="panel-1" className="hidden" />
-              <label htmlFor="panel-1" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left cursor-pointer">Sourcing</label>
-              <div className="accordion__content overflow-hidden bg-grey-lighter">
-                <h2 className="accordion__header pt-4 pl-4 text-left">Only The Best</h2>
-                <p className="accordion__body p-4 text-left" id="panel1">Sourcing is important when it comes to CBD products. All of our hemp comes from farms in Oregon. We chose this state because of the quality of the soil, as well as their high regulation standards for cultivation and testing.</p>
+            <div className="flow-root">
+              <div className="-my-8 divide-y divide-gray-100">
+                <details className="py-8 group" open>
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-medium text-gray-900">
+                      Lorem ipsum dolor sit amet consectetur adipisicing?
+                    </h5>
+
+                    <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+
+                  <p className="mt-4 leading-relaxed text-left text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                    veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                    nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                    corporis earum similique!
+                  </p>
+                </details>
+
+                <details className="py-8 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-medium text-gray-900">
+                      Lorem ipsum dolor sit amet consectetur adipisicing?
+                    </h5>
+
+                    <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+
+                  <p className="mt-4 leading-relaxed text-left text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+                    veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
+                    nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+                    corporis earum similique!
+                  </p>
+                </details>
               </div>
             </div>
-            
-            <div className="w-full">
-              <input type="checkbox" name="panel" id="panel-2" className="hidden" />
-              <label htmlFor="panel-2" className="relative block text-xl text-gray-600 p-4 border-t border-grey text-left cursor-pointer">Return Policy</label>
-              <div className="accordion__content overflow-hidden bg-grey-lighter">
-                <h2 className="accordion__header pt-4 pl-4 text-left">Return Unopened Products</h2>
-                <p className="accordion__body p-4 text-left">A full refund is available for all UNOPENED products. All you have to do is ship the products back within 30 days of your purchase. A shipping label is provided for returns upon request.</p>
-              </div>
-            </div>
-          
-          </div>
           </div>
         </div>
 
