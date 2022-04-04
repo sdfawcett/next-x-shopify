@@ -8,7 +8,7 @@ import FooterFade from "../components/FooterFade"
 import Tabs from "../components/Tabs"
 import AOS from 'aos';
 import Testimonials from '../components/Testimonials';
-import Features from '../Features';
+import Features from '../components/Features';
 
 export default function Home({products}) {
 

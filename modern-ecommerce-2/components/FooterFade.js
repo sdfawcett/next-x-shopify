@@ -7,12 +7,12 @@ export default function FooterFade() {
   return (
     <section>
 
-      <div className="footer-fade bg-light-green relative min-h-min">
+      <div className="footer-fade bg-bg-green relative min-h-min">
         
-        <aside className="relative overflow-hidden text-white bg-gradient-to-b from-darker-green to-light-green">
+        <aside className="relative overflow-hidden text-white bg-gradient-to-b from-darker-green to-bg-green">
           <div className="relative z-10 max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-xl space-y-8 text-center sm:text-right sm:ml-auto">
-              <h2 className="text-4xl font-bold sm:text-5xl">
+              <h2 className="text-4xl font-bold font-lora sm:text-5xl">
                 New product launched!
                 <span className="hidden sm:block">
                   Impossible to put down

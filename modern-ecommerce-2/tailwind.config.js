@@ -67,8 +67,11 @@ module.exports = {
           800: '#97266D',
           900: '#702459',
         },
-        'light-green': '#BFD6AF',
-        'darker-green': '#AFCABC',
+        'bg-green': '#344e41',
+        'lighter-green': '#588157',
+        'darker-green': '#3A5A40',
+        'lightest-green': '#A3B18A',
+        'new-beige': '#DAD7CD',
         'cool-gray': '#687275',
         'dark-blue': '#3E3649',
         'contrast-gray': '#F2F0F4',
@@ -120,11 +123,21 @@ module.exports = {
       },
       animation: {
         float: 'float 5s ease-in-out infinite',
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite'
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10%)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
       zIndex: {
@@ -134,6 +147,8 @@ module.exports = {
     },
   },
   plugins: [
-    require("daisyui")
+    require("daisyui"), 
+    require('@tailwindcss/forms')
   ],
+  
 };

@@ -26,9 +26,9 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
 
-        <h3 className="font-extrabold text-xl font-lora mb-1 mt-4 text-dark-blue text-center">{title}</h3>
-        <p className="mt-1 text-sm text-dark-blue font-karla text-center">{formatter.format(price)}</p>
-        <button className="w-full btn text-white bg-dark-blue hover:bg-dark-blue">View</button>
+        <h3 className="font-extrabold text-xl font-lora mb-1 mt-4 text-gray-900 dark:text-new-beige text-center">{title}</h3>
+        <p className="mt-1 text-sm text-gray-900 dark:text-new-beige font-karla text-center">{formatter.format(price)}</p>
+        <button className="w-full btn text-white bg-bg-green hover:bg-lighter-green dark:bg-lightest-green dark:text-white">View</button>
 
       </a>
 

@@ -6,36 +6,25 @@ import VarietyLogo from '../images/Variety-Logo-cropped.svg'
 
 export default function Companies() {
   return (
-   <section className="relative">
-      {/* Background gradient (light version only) */}
-      <div className="absolute bottom-0 left-0 right-0 h-128 bg-gradient-to-t from-gray-100 to-white pointer-events-none -z-10 dark:hidden" aria-hidden="true"></div>
-      {/* End background gradient (light version only) */}
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="pb-12">
-         <div className="grid grid-cols-2 gap-4 lg:gap-6 md:grid-cols-4 text-center" data-aos-id-stats>
-            {/* 1st item */}
-            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]">
-            <div className="text-gray-600 dark:text-dark-blue">"World's finest CBD brand for relaxation."</div>
-            <Image className="transition-opacity duration-300" width="100" height="50" src={RollingStoneLogo} alt="Rolling Stone Magazine" />
-            </div>
-            {/* 2nd item */}
-            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="100">
-            <div className="text-gray-600 dark:text-dark-blue">"The hottest CBD brand around right now."</div>
-            <Image className="transition-opacity duration-300" width="100" height="50" src={MaximLogo} alt="Maxim Magazine" />
-            </div>
-            {/* 3rd item */}
-            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="200">
-            <div className="text-gray-600 dark:text-dark-blue">"Thanks to Bomb Botanicals, we're living our best lives."</div>
-            <Image className="transition-opacity duration-300" width="100" height="50" src={TimeLogo} alt="Time Magazine" />
-            </div>
-            {/* 4th item */}
-            <div className="bg-white dark:bg-darker-green dark:bg-opacity-100 dark:border dark:border-darker-green py-8 px-1 shadow-2xl" data-aos="fade-down" data-aos-anchor="[data-aos-id-stats]" data-aos-delay="300">
-            <div className="text-gray-600 dark:text-dark-blue">"One of the best THC-free CBD oils that we've ever tried."</div>
-            <Image className="transition-opacity duration-300" width="100" height="50" src={VarietyLogo} alt="Variety Magazine" />
-            </div>
+     <>
+   
+   <section className='relative marquee border-t-4 border-b-4'>
+      <div className="relative flex overflow-x-hidden font-karla">
+         <div className="py-12 animate-marquee whitespace-nowrap">
+            <span className="mx-4 text-xl">"World's finest CBD brand for relaxation." &#8212; Rolling Stone</span>
+            <span className="mx-4 text-xl">"The hottest CBD brand around right now." &#8212; Maxim Magazine</span>
+            <span className="mx-4 text-xl">"Thanks to Bomb Botanicals, we're living our best lives." &#8212; Time Magazine</span>
+            <span className="mx-4 text-xl">"One of the best THC-free CBD oils that we've ever tried." &#8212; Variety Magazine</span>
+         </div>
+
+         <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap font-karla">
+            <span className="mx-4 text-xl">"World's finest CBD brand for relaxation." &#8212; Rolling Stone</span>
+            <span className="mx-4 text-xl">"The hottest CBD brand around right now." &#8212; Maxim Magazine</span>
+            <span className="mx-4 text-xl">"Thanks to Bomb Botanicals, we're living our best lives." &#8212; Time Magazine</span>
+            <span className="mx-4 text-xl">"One of the best THC-free CBD oils that we've ever tried." &#8212; Variety Magazine</span>
          </div>
       </div>
-      </div>
    </section>
+   </>
   )
 }

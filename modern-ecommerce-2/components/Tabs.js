@@ -19,8 +19,8 @@ export default function Tabs() {
 
          {/* Section header */}
          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 font-red-hat-display mb-4">How To Use CBD Products</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">Pure CBD products made using simple, natural carrier oils and botanicals</p>
+            <h2 className="h2 font-lora mb-4">How To Use CBD Products</h2>
+            <p className="text-xl text-gray-600 font-karla dark:text-gray-400">Pure CBD products made using simple, natural carrier oils and botanicals</p>
          </div>
 
          {/* Section content */}
