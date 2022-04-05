@@ -9,6 +9,16 @@ export default function FooterFade() {
 
       <div className="bg-bg-green relative min-h-min">
         <div id='ff-bg' className="relative overflow-hidden text-white bg-blend-darken">
+        <Image
+            src={HempFieldBg}
+            alt="A field of hemp plants"
+            className='object-center'
+            layout="fill" 
+            objectFit="cover" 
+            placeholder="blur"
+            objectPosition="bottom center"
+
+        />
           <div className="grid max-w-screen-xl grid-cols-1 mx-auto lg:grid-cols-2">
 
             <div className="relative z-10 max-w-screen-xl px-4 py-7 lg:py-32 mx-auto sm:px-6 lg:px-8">
