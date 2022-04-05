@@ -57,64 +57,69 @@ export default function Nav() {
   return (
     <>
     <Announcement />
-    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'sticky top-0 z-20'}>
-      <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl">
 
-        <div>
+    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
+      <div
+        className="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8"
+      >
+        <div className="flex items-center">
+
           <Link href="/" passHref>
-            <a className="cursor-pointer">
-              <span className="text-lg pt-1 font-bold">
-                Shopify + Next.js
-              </span>
+            <a className="flex cursor-pointer">
+              <span className="inline-block w-32 h-10 bg-gray-200 rounded-lg"></span>
             </a>
           </Link>
+
         </div>
 
-        
+        <div className="flex items-center justify-end flex-1">
+          <div className="flex items-center ml-8">
 
-        <div className='flex w-1/2 justify-end items-center'>
+            {/* theme switcher */}
+            <div className='flex pr-8'>
+                {/*<span className='hidden md:inline'>day mode</span> */}
+                
+                  <div className="form-switch flex flex-col justify-center ml-3 mr-3">
+                    <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
+                    <label className="relative" htmlFor="light-switch-desktop">
+                      <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-100 dark:to-white shadow-sm z-10" aria-hidden="true"></span>
 
-          {/* theme switcher */}
-          <div className='flex pr-8'>
-              <span className='hidden md:inline'>day mode</span>
-              
-                <div className="form-switch flex flex-col justify-center ml-3 mr-3">
-                  <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
-                  <label className="relative" htmlFor="light-switch-desktop">
-                    <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-100 dark:to-white shadow-sm z-10" aria-hidden="true"></span>
+                      <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                        <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
+                          <FaYinYang />
+                        </g>
+                      </svg>
 
-                    <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
-                      <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
-                        <FaYinYang />
-                      </g>
-                    </svg>
+                      <svg className="absolute top-1 left-1" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                        <g className="fill-current text-white" fillRule="nonzero" opacity=".88">  
+                        <BsSunFill />
+                        </g>
+                      </svg>
 
-                    <svg className="absolute top-1 left-1" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
-                      <g className="fill-current text-white" fillRule="nonzero" opacity=".88">  
-                      <BsSunFill />
-                      </g>
-                    </svg>
+                      <span className="sr-only">Switch to light / zen mode version</span>
+                    </label>
+                  </div>
 
-                    <span className="sr-only">Switch to light / zen mode version</span>
-                  </label>
-                </div>
+                {/*<span className='hidden md:inline'>zen mode</span> */}
+                
+            </div>
 
-              <span className='hidden md:inline'>zen mode</span>
-              
+            <div className="flex items-center">
+
+              <span>
+                <a
+                onClick={() => setCartOpen(!cartOpen)} 
+                className="cursor-pointer pl-2"
+                >
+
+                <ShoppingCartIcon className='inline h-6 w-6' /> <span className='inline text-md font-bold'>Cart ({cartQuantity})</span>
+                </a>
+
+                <MiniCart cart={cart} />
+              </span>
+
+            </div>
           </div>
-
-          <div className=''>
-            
-            <a
-              onClick={() => setCartOpen(!cartOpen)} 
-              className="cursor-pointer pl-2"
-              >
-
-              <ShoppingCartIcon className='inline h-6 w-6' /> <span className='inline text-md font-bold'>Cart ({cartQuantity})</span>
-            </a>
-            <MiniCart cart={cart} />
-          </div>
-
         </div>
       </div>
     </header>
