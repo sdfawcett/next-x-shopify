@@ -102,8 +102,9 @@ input[type=range]::-moz-focus-outer {
 
 /* hero image background gradient */
 
-.hero {
-	transition: background-color 1s;
+#hero {
+	background-size: cover;
+	background-position: bottom;
 }
 
 /*
