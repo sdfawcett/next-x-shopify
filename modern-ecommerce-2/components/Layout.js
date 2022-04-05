@@ -6,7 +6,7 @@ export default function Layout({ children }) {
 
   return (
     
-    <div className='antialiased bg-white text-gray-900 dark:bg-bg-green dark:text-contrast-gray tracking-tight'>
+    <div className='antialiased bg-white text-gray-900 dark:bg-bg-green dark:text-contrast-gray tracking-tight transition-colors duration-300'>
       <div className='flex flex-col justify-between min-h-screen'>
         <Nav />
 
