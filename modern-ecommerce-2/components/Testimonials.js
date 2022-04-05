@@ -3,18 +3,7 @@ export default function Testimonials() {
   return (
    <section>
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
-      <div className="max-w-xl mx-auto text-center">
-         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            Read trusted reviews from our customers
-         </h2>
-   
-         <p className="max-w-lg mx-auto mt-4 text-gring-offset-warm-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            praesentium natus sapiente commodi. Aliquid sunt tempore iste
-            repellendus explicabo dignissimos placeat, autem harum dolore
-            reprehenderit quis! Quo totam dignissimos earum.
-         </p>
-      </div>
+      
    
       <div
          className="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3 sm:gap-16"

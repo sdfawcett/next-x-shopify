@@ -58,7 +58,7 @@ export default function Nav() {
     <>
     <Announcement />
 
-    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
+    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-white dark:bg-bg-green dark:text-new-beige backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
       <div
         className="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8"
       >
@@ -112,7 +112,7 @@ export default function Nav() {
                 className="cursor-pointer pl-2"
                 >
 
-                <ShoppingCartIcon className='inline h-6 w-6' /> <span className='inline text-md font-bold'>Cart ({cartQuantity})</span>
+                <ShoppingCartIcon className={clientWindowHeight ? 'inline text-gray-900 dark:text-white h-6 w-6' : 'inline text-gray-900 h-6 w-6'} /> <span className={clientWindowHeight ? 'inline font-bold text-gray-900 dark:text-white' : 'inline font-bold text-gray-900'}>Cart ({cartQuantity})</span>
                 </a>
 
                 <MiniCart cart={cart} />

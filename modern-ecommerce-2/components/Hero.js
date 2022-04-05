@@ -20,16 +20,18 @@ export default function Hero() {
 
         <div className="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>
 
-        <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
+        <div className="z-10 relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div className="max-w-xl text-center sm:text-left">
 
             <h1 className="mb-5 text-5xl h2 font-bold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
             <p className="mb-5 dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants</p>
 
             <div className="flex flex-wrap gap-4 mt-8 text-center">
-              <a className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green focus:outline-none focus:ring" href="/get-started">
-                Get Started
+            <Link href="#product-section">
+              <a className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green focus:outline-none focus:ring" href="/get-started">
+                Shop CBD
               </a>
+            </Link>
             </div>
           </div>
         </div>

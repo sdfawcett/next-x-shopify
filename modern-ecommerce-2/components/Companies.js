@@ -8,7 +8,7 @@ export default function Companies() {
   return (
      <>
    
-   <section className='relative marquee border-t-4 border-b-4'>
+   <section className='relative marquee border-t-4 border-b-4 border-gray-900 dark:border-new-beige text-gray-900 dark:text-new-beige'>
       <div className="relative flex overflow-x-hidden font-karla">
          <div className="py-12 animate-marquee whitespace-nowrap">
             <span className="mx-4 text-xl">"World's finest CBD brand for relaxation." &#8212; Rolling Stone</span>

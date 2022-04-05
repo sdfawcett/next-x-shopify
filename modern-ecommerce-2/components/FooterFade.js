@@ -107,7 +107,7 @@ export default function FooterFade() {
                   </div>
                 </div>
 
-                <button type="submit" className="block w-full px-5 py-3 text-sm font-medium text-white bg-gray-900 rounded-lg">
+                <button type="submit" className="block w-full px-5 py-3 text-sm font-medium shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black text-white bg-lighter-green hover:bg-bg-green">
                   Sign Up
                 </button>
 
