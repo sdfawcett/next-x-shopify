@@ -55,7 +55,7 @@ export default function Nav() {
     });
 
     //theme switcher icon swap
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
 
     const handleChangeActive = () => {
       setActive((previousStar) => {
