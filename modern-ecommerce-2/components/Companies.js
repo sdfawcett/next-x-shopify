@@ -15,7 +15,7 @@ export default function Companies() {
       <div className="relative flex overflow-x-hidden font-karla">
          <div className="py-12 whitespace-nowrap">
 
-            <Marquee gradient={false} speed={30}>
+            <Marquee gradient={false} speed={40} loop={0}>
                <span className="mx-28 text-xl text-center">
                   "World's finest CBD brand for relaxation."<br />
                   <Image src={RollingStoneLogo} height={40} width={100} />

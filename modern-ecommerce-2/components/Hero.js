@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import Image from 'next/image'
 import WomanHeroBg from '../images/woman-hero-bg.jpg';
 
@@ -27,10 +27,8 @@ export default function Hero() {
             <p className="mb-5 text-2xl dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants.</p>
 
             <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <Link href="#product-section">
-              <a className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green focus:outline-none focus:ring" href="/get-started">
+            <Link className='block w-full px-12 py-3 text-sm font-medium text-white rounded shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green' to="product-section" activeClass="active" spy={true} smooth={true}>
                 Shop CBD
-              </a>
             </Link>
             </div>
           </div>
