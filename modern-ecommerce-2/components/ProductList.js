@@ -8,7 +8,7 @@ const ProductList = ({products}) => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div data-aos="fade-down" className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 font-lora text-gray-900 mb-4 dark:text-new-beige">From rough design files, to powerful products</h1>
             <p className="text-xl text-gray-900 dark:text-new-beige">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
           </div>

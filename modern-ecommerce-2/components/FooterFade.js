@@ -23,11 +23,11 @@ export default function FooterFade() {
 
             <div className="relative z-10 max-w-screen-xl px-4 py-7 lg:py-32 mx-auto sm:px-6 lg:px-8">
               <div className="max-w-xl space-y-8 text-center lg:text-right sm:ml-auto">
-                <h2 className="text-4xl font-bold font-lora sm:text-5xl">
+                <h2 data-aos="slide-up" className="text-4xl font-bold font-lora sm:text-5xl">
                   A One-Year Supply of CBD On Us!
                 </h2>
 
-                <p className="sm:block sm:max-w-lg sm:ml-auto sm:text-lg">
+                <p data-aos="slide-up" className="sm:block sm:max-w-lg sm:ml-auto sm:text-lg">
                   Sign up for your chance to win one year's worth of CBD, compliments of Bomb Botanicals.
                 </p>
 
@@ -37,7 +37,7 @@ export default function FooterFade() {
 
             <div className="z-10 max-w-screen-xl px-4 sm:px-6 lg:px-8">
               <div className="space-y-8 text-left ml-0 lg:ml-auto">
-              <form action="" className="p-8 pt-2 lg:pt-20 lg:mt-6 mb-0 space-y-4 rounded-lg">
+              <form data-aos="slide-up" action="" className="p-8 pt-2 lg:pt-20 lg:mt-6 mb-0 space-y-4 rounded-lg">
 
                 <div>
                   <label htmlFor="first-name" className="text-sm font-medium">First Name</label>

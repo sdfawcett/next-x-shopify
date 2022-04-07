@@ -11,6 +11,7 @@ import CarouselImage07 from '../images/blood-orange.webp'
 import CarouselImage08 from '../images/cbd-dog-salve.webp'
 import CarouselImage09 from '../images/chews.webp'
 import CarouselImage10 from '../images/paws-fab-pets.webp'
+import { FaInstagram } from 'react-icons/fa'
 
 // Import Swiper
 import Swiper, { Autoplay, Navigation } from 'swiper';
@@ -45,7 +46,7 @@ export default function Carousel() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div data-aos="fade-down" className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 font-lora text-gray-900 dark:text-new-beige mb-4">From rough design files, to powerful products</h1>
             <p className="text-xl font-karla text-gray-900 dark:text-new-beige">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
           </div>
@@ -60,7 +61,11 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage01} width="540" height="460" alt="Carousel item 01" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
+
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
                 </div>
@@ -69,6 +74,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage02} width="540" height="460" alt="Carousel item 02" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -78,6 +87,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage03} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -87,6 +100,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage04} width="540" height="460" alt="Carousel item 04" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -96,6 +113,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage05} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -105,6 +126,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage06} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -114,6 +139,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage07} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -123,6 +152,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage08} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -132,6 +165,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage09} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -141,6 +178,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage10} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -151,6 +192,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage01} width="540" height="460" alt="Carousel item 01" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -160,6 +205,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage02} width="540" height="460" alt="Carousel item 02" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -169,6 +218,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage03} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -178,6 +231,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage04} width="540" height="460" alt="Carousel item 04" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -187,6 +244,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage05} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -196,6 +257,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage06} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -205,6 +270,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage07} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -214,6 +283,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage08} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -223,6 +296,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage09} width="540" height="460" alt="Carousel item 05" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>
@@ -232,6 +309,10 @@ export default function Carousel() {
             <div className="swiper-slide max-w-lg">
               <Image className="transition-opacity duration-300" src={CarouselImage10} width="540" height="460" alt="Carousel item 03" />
               <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+
+                <div className="flex grow">
+                  <a className="inline-flex btn-sm text-white py-5 bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0"><FaInstagram className='inline text-2xl' /></a>
+                </div>
                 
                 <div className="absolute bottom-0 right-0 p-6">
                   <a className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out" href="#0">Instagram</a>

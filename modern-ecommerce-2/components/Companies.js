@@ -13,7 +13,7 @@ export default function Companies() {
   return (
    <section className='relative marquee border-t-4 border-b-4 border-gray-900 dark:border-new-beige text-gray-900 dark:text-new-beige'>
       <div className="relative flex overflow-x-hidden font-karla">
-         <div className="py-12 whitespace-nowrap">
+         <div className="pt-8 pb-5 whitespace-nowrap">
 
             <Marquee gradient={false} speed={40} loop={0}>
                <span className="mx-28 text-xl text-center">

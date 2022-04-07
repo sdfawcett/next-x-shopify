@@ -149,7 +149,7 @@ export default function ProductForm({ product }) {
                 <details className="py-8 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg text-left font-medium dark:text-new-beige">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
+                      Product Description
                     </h5>
 
                     <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">
@@ -186,17 +186,14 @@ export default function ProductForm({ product }) {
                   </summary>
 
                   <p className="mt-4 leading-relaxed text-left dark:text-new-beige">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-                    veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
-                    nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-                    corporis earum similique!
+                    {product.description}
                   </p>
                 </details>
 
                 <details className="py-8 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg text-left font-medium  dark:text-new-beige">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
+                      Shipping Info
                     </h5>
 
                     <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">
@@ -233,10 +230,7 @@ export default function ProductForm({ product }) {
                   </summary>
 
                   <p className="mt-4 leading-relaxed text-left dark:text-new-beige">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-                    veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
-                    nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-                    corporis earum similique!
+                    Ships in 1-2 business days
                   </p>
                 </details>
               </div>

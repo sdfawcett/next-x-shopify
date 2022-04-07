@@ -1,27 +1,44 @@
-
+import Image from 'next/image'
+import BbGlobe from '../images/bb-globe-only.svg'
 
 export default function Features() {
   return (
-   <section id="features" className="bg-bg-green text-gray-900">
-      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
+   <section className="bg-lightest-green text-gray-900 relative">
+
+      <div className="custom-shape-divider-top">
+         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+         </svg>
+      </div>
+
+      <div className="relative max-w-screen-xl px-4 py-36 sm:px-6 lg:px-8 mx-auto">
+         <div className="opacity-10 z-0 w-10/12 h-10/12">
+         <Image
+            src={BbGlobe}
+            alt="bomb botanicals logo globe"
+            layout="fill" 
+            objectFit="contain" 
+            objectPosition="center"
+         />
+         </div>
       
-         <h2 className="text-3xl font-bold sm:text-4xl font-lora text-center">Natural CBD, inspired by Earth</h2>
+         <h2 data-aos="fade-left" className="z-10 text-3xl font-bold sm:text-4xl font-lora text-center">Natural CBD, inspired by Earth</h2>
    
-         <p className="mt-4 text-gray-900 font-karla text-xl text-center">
+         <p data-aos="fade-left" className="z-10 mt-4 text-gray-900 font-karla text-xl text-center">
             Mother nature inspires everything we do. That’s why our CBD is pure, GMO-free, and has zero pesticides.
          </p>
       
    
       <div
-         className="grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3"
+         className="z-10 grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3"
       >
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
 
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -43,12 +60,12 @@ export default function Features() {
             </div>
          </div>
    
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -70,12 +87,12 @@ export default function Features() {
             </div>
          </div>
    
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -97,12 +114,12 @@ export default function Features() {
             </div>
          </div>
    
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -124,12 +141,12 @@ export default function Features() {
             </div>
          </div>
    
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -151,12 +168,12 @@ export default function Features() {
             </div>
          </div>
    
-         <div className="flex items-start">
+         <div data-aos="fade-right" className="flex items-start">
             <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
             <svg
                className="w-5 h-5"
                fill="none"
-               stroke="currentColor"
+               stroke="#DAD7CD"
                viewBox="0 0 24 24"
                xmlns="http://www.w3.org/2000/svg"
             >
@@ -179,7 +196,13 @@ export default function Features() {
          </div>
          </div>
       </div>
-   
+
+      <div className="custom-shape-divider-bottom">
+         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+         </svg>
+      </div>
+      
    </section>
   )
 }

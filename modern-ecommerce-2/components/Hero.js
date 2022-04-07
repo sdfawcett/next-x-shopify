@@ -23,11 +23,11 @@ export default function Hero() {
         <div className="z-10 relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div className="max-w-xl text-center sm:text-left">
 
-            <h1 className="mb-5 text-5xl h2 font-extrabold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
-            <p className="mb-5 text-2xl dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants.</p>
+            <h1 data-aos="fade-left" className="mb-5 text-5xl h2 font-extrabold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
+            <p data-aos="fade-right" className="mb-5 text-2xl dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants.</p>
 
-            <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <Link className='block w-full px-12 py-3 text-sm font-medium text-white rounded shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green' to="product-section" activeClass="active" spy={true} smooth={true}>
+            <div data-aos="fade-right" className="flex flex-wrap gap-4 mt-8 text-center">
+            <Link className='block cursor-pointer w-full px-12 py-3 text-sm font-medium text-white rounded shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black bg-lighter-green sm:w-auto active:bg-bg-green hover:bg-bg-green' to="product-section" activeClass="active" spy={true} smooth={true}>
                 Shop CBD
             </Link>
             </div>

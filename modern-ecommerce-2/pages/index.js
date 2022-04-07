@@ -16,7 +16,7 @@ export default function Home({products}) {
     AOS.init({
       once: true,
       disable: 'phone',
-      duration: 750,
+      duration: 1200,
       easing: 'ease-out-quart',
     });
   });
@@ -30,8 +30,6 @@ export default function Home({products}) {
       </div>
       <Features />
       <Carousel />
-      <Tabs />
-      <Testimonials />
       <FooterFade />
     </>
   )
