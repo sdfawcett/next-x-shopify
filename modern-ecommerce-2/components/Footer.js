@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../images/bb-logo.svg';
 
 const navigation = [
    { name: 'About', href: '#' },
@@ -13,7 +15,13 @@ const navigation = [
         <div className="grid max-w-screen-xl grid-cols-1 mx-auto lg:grid-cols-2">
             <div className="px-4 py-16 border-b border-gray-800 md:border-b-0 md:border-l lg:pl-12 lg:order-last">
             <div className="block lg:hidden">
-                <span className="inline-block w-32 h-10 bg-gray-700 rounded-lg"></span>
+                <Link href="/" passHref>
+                    <a className="flex cursor-pointer">
+                    <div className='relative w-[9.1rem] h-[3.1rem]'>
+                        <Image alt="Bomb Botanicals Logo" src={Logo} layout="fill" objectFit="cover" />
+                    </div>
+                    </a>
+                </Link>
             </div>
 
             <div className="mt-12 space-y-4 lg:mt-0">
@@ -47,7 +55,13 @@ const navigation = [
 
             <div className="px-4 py-16 lg:pr-12">
                 <div className="hidden lg:block">
-                    <span className="inline-block w-32 h-10 bg-gray-700 rounded-lg"></span>
+                    <Link href="/" passHref>
+                        <a className="flex cursor-pointer">
+                        <div className='relative w-[9.1rem] h-[3.1rem]'>
+                            <Image alt="Bomb Botanicals Logo" src={Logo} layout="fill" objectFit="cover" />
+                        </div>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-3 gap-8 lg:mt-12">
