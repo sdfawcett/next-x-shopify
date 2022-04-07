@@ -1,5 +1,7 @@
 import { useState, useEffect, useContext } from "react"
 import Link from 'next/link'
+import Image from 'next/image'
+import LeafBg from '../images/leaf-3.svg'
 import { formatter } from '../utils/helpers'
 import ProductOptions from "./ProductOptions"
 import { CartContext } from "../context/shopContext"
@@ -90,10 +92,21 @@ export default function ProductForm({ product }) {
 
 
   return (
-    <div className="relative" >
-      <div className="rounded-2xl p-4 flex flex-col w-full justify-center items-center md:w-full">
-        <h2 className="text-2xl font-bold mt-6">{product.title}</h2>
-        <span className="pb-3">{formatter.format(product.variants.edges[0].node.priceV2.amount)}</span>
+    <div className="relative w-full bg-blend-darken">
+
+      <div className="opacity-5 z-0 w-10/12 h-10/12">
+        <Image
+          src={LeafBg}
+          alt="outline of a leaf"
+          layout="fill" 
+          objectFit="contain" 
+          objectPosition="center"
+        />
+      </div>
+
+      <div className="rounded-2xl mt-8 p-4 flex flex-col justify-center items-center">
+        <h2 className="text-3xl dark:text-new-beige font-bold font-lora mt-6">{product.title}</h2>
+        <span className="pb-3 dark:text-new-beige">{formatter.format(product.variants.edges[0].node.priceV2.amount)}</span>
         {
           product.options.map(({ name, values }) => (
             <ProductOptions
@@ -114,28 +127,28 @@ export default function ProductForm({ product }) {
               onClick={() => {
                 addToCart(selectedVariant)
               }}
-              className="bg-black rounded text-white px-2 py-3 mt-3 dark:bg-transparent dark:border dark:border-white hover:bg-gray-800 md:w-4/5">Add To Cart
+              className="bg-lighter-green z-10 w-full rounded font-bold shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black text-white px-2 py-3 mt-3 dark:bg-transparent dark:border-2 dark:border-new-beige dark:hover:bg-lightest-green dark:hover:text-bg-green md:w-4/5">Add To Cart
             </button> :
             <button
-              className="rounded text-white px-2 py-3 mt-3 bg-gray-800 cursor-not-allowed md:w-4/5">
+              className="rounded text-white z-10 px-2 py-3 mt-3 bg-gray-800 cursor-not-allowed md:w-4/5">
                 Sold out!
             </button>
         }
             <Link href="/#product-section">
-              <button className="rounded text-gray-900 px-2 py-3 mt-3 border border-gray-900 dark:text-white dark:border-white md:w-4/5">
+              <button className="rounded z-10 text-gray-900 font-bold px-2 py-3 mt-3 border-2 border-gray-900 dark:text-white dark:border-new-beige md:w-4/5">
                 Continue Shopping
               </button>
             </Link>
       </div>
 
 
-        <div className="flex flex-wrap pt-5 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-full mx-auto">
+        <div className="flex flex-wrap pt-5 px-8 lg:px-[4.5rem] space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-full mx-auto lg:mx-0">
           <div className="w-full p-4">
             <div className="flow-root">
-              <div className="-my-8 divide-y divide-gray-100">
+              <div className="-my-8 divide-y divide-new-beige">
                 <details className="py-8 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
+                    <h5 className="text-lg text-left font-medium dark:text-new-beige">
                       Lorem ipsum dolor sit amet consectetur adipisicing?
                     </h5>
 
@@ -172,7 +185,7 @@ export default function ProductForm({ product }) {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-left text-gray-700">
+                  <p className="mt-4 leading-relaxed text-left dark:text-new-beige">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
                     veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
                     nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
@@ -180,9 +193,9 @@ export default function ProductForm({ product }) {
                   </p>
                 </details>
 
-                <details className="py-8 group">
+                <details className="py-8 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
+                    <h5 className="text-lg text-left font-medium  dark:text-new-beige">
                       Lorem ipsum dolor sit amet consectetur adipisicing?
                     </h5>
 
@@ -219,7 +232,7 @@ export default function ProductForm({ product }) {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-left text-gray-700">
+                  <p className="mt-4 leading-relaxed text-left dark:text-new-beige">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
                     veritatis molestias culpa in, recusandae laboriosam neque aliquid libero
                     nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio

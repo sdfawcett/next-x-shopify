@@ -24,7 +24,7 @@ const navigation = [
                     Get The Newsletter
                 </h5>
 
-                <p className="max-w-xs mt-1 text-xs text-gray-500">
+                <p className="max-w-lg mt-1 text-xs text-gray-500 dark:text-contrast-gray">
                     Bomb Botanicals was founded with the goal of building a product line for the everyday person to feel comfortable supplementing with hemp. We believe in formulating quality products with a specific intent and purpose. No gimmicks, no hype, just results. 
                 </p>
                 </div>
@@ -35,7 +35,7 @@ const navigation = [
 
                     <input className="w-full py-4 pl-3 pr-16 text-sm bg-gray-800 border-none rounded-lg" id="email" type="email" placeholder="Enter your email" />
 
-                    <button className="absolute p-3 text-white -translate-y-1/2 bg-blue-600 rounded-md top-1/2 right-1.5" type="button">
+                    <button className="absolute p-3 text-white -translate-y-1/2 bg-lighter-green rounded-md top-1/2 right-1.5" type="button">
                     <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>

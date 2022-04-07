@@ -26,7 +26,7 @@ export default function CreamProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">What is CBD?</h2>
       
                <p className="mt-4 text-gray-600">
                   Often referred to as CBD, cannabidiol is a naturally occurring substance found throughout various strains of the Cannabis Sativa plant. In specific, it tends to have the highest concentration in industrial hemp.
@@ -71,7 +71,7 @@ export default function CreamProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Quality has always been the number one priority at Penguin. That’s because we believe that our customer’s experience comes first.  So to make sure that our products live up to our standards, we get involved in every step of the process.
@@ -85,12 +85,6 @@ export default function CreamProductSection() {
                   This oil is then combined with other ingredients to make our CBD Cream. It is loaded with terpenes to promote skin-cell rejuvenation.
                </p>
       
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
 

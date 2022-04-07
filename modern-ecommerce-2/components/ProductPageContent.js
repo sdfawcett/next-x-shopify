@@ -39,9 +39,9 @@ export default function ProductPageContent({ product }) {
   return (
     <div>
       
-      <div className="flex flex-col md:flex-row mx-14">
+      <div className="flex flex-col lg:flex-row mx-14 mt-28">
       
-          <div className="relative w-full md:w-1/2 min-h-[80vh] h-[80vh]">
+          <div className="relative w-full bg-no-repeat lg:w-1/2 min-h-[80vh] h-[80vh]">
           <BackButton />
             <Swiper
               style={{ '--swiper-navigation-color': '#000', '--swiper-pagination-color': '#000' }}
@@ -54,7 +54,7 @@ export default function ProductPageContent({ product }) {
             </Swiper>
           </div>
 
-        <div className='w-full text-center md:w-1/2'>
+        <div className='w-full text-center lg:w-1/2'>
 
         <ProductForm product={product} />
 

@@ -26,7 +26,7 @@ export default function GummiesProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">What is CBD?</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">What is CBD?</h2>
       
                <p className="mt-4 text-gray-600">
                   Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
@@ -43,13 +43,7 @@ export default function GummiesProductSection() {
                <p className="mt-4 text-gray-600">
                   This product will not get you "high." 🎉
                </p>
-      
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
+
                </div>
             </div>
          </div>
@@ -67,7 +61,7 @@ export default function GummiesProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Our process begins in Oregon, where our hemp is organically grown on our farms. The utmost care is put into cultivating the plants without the use of any pesticides, herbicides or chemical fertilizers. That’s because we believe in only using sustainable and environmentally-conscious farming methods.
@@ -77,12 +71,6 @@ export default function GummiesProductSection() {
                   Next, the hemp is taken to our labs so that the CBD can be extracted, distilled and turned into oil. We use a CO2 extraction process in order to ensure that our oil contains the cleanest, purest CBD extract possible.
                </p>
       
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
 

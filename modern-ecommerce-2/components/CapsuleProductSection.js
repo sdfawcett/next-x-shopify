@@ -17,7 +17,7 @@ export default function CapsuleProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Our approach to CBD starts at the root. We make sure that all of our hemp is grown using sustainable and environmentally-friendly practices. So not only is it non-GMO, but pesticide and herbicide free as well.
@@ -31,12 +31,6 @@ export default function CapsuleProductSection() {
                   Finally, this broad-spectrum oil is taken and combined with other ingredients—including gelatin, glycerin and MCT oil—to create our signature gel capsules.
                </p>
       
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
 
@@ -75,7 +69,7 @@ export default function CapsuleProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">Calm, in a bottle.</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Calm, in a bottle.</h2>
       
                <p className="mt-4 text-gray-600">
                   Our CBD capsules come in a 30-count bottle. They are soft gel capsules that can be easily swallowed and ingested. Each capsule packs a potent 25mg dose of our broad-spectrum oil. That means you get a precise dosage every time.
@@ -93,12 +87,6 @@ export default function CapsuleProductSection() {
                   This product will not get you "high." 🎉
                </p>
       
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
          </div>

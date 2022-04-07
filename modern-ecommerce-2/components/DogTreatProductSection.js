@@ -17,7 +17,7 @@ export default function DogTreatProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Our team has spent countless hours working with dog owners and vets to figure out how best to bring the joys of CBD to our beloved canines. We started off with an understanding that CBD products impact dogs’ nervous systems in much the same way that they do humans. Meaning that they instill a sense of calm while reducing pain signals from throughout the body.
@@ -34,13 +34,7 @@ export default function DogTreatProductSection() {
                <p className="mt-4 text-gray-600">
                   It is with that knowledge in mind that we have crafted this product, perfect for dogs of all shapes and sizes. Our production method, which uses the latest in effective CO2 extraction to produce a healthy and all-natural full-spectrum CBD oil product, has everything you need to help your dog live his best life.
                </p>
-      
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
+
                </div>
             </div>
 
@@ -79,18 +73,12 @@ export default function DogTreatProductSection() {
       
                <div className="p-8 sm:p-16 lg:p-24">
 
-               <h2 className="text-2xl font-bold sm:text-3xl">Storage</h2>
+               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Storage</h2>
       
                <p className="mt-4 text-gray-600">
                   Please keep in a cool, dry location for storage. A cupboard or a pantry, for instance, are great places to store your dog treats. Refrigeration is not necessary as long as the product is not in direct sunlight. Also, make sure that the safety lid is tightly secured on the container when not in use.
                </p>
       
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
          </div>

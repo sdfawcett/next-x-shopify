@@ -23,8 +23,8 @@ export default function Hero() {
         <div className="z-10 relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div className="max-w-xl text-center sm:text-left">
 
-            <h1 className="mb-5 text-5xl h2 font-bold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
-            <p className="mb-5 dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants</p>
+            <h1 className="mb-5 text-5xl h2 font-extrabold font-lora dark:text-gray-800">Premium CBD Products You Can Trust</h1>
+            <p className="mb-5 text-2xl dark:text-gray-700 font-karla">Made from the highest quality, lab tested, Oregon hemp plants.</p>
 
             <div className="flex flex-wrap gap-4 mt-8 text-center">
             <Link href="#product-section">
