@@ -29,7 +29,6 @@ export default function Home({products}) {
         <ProductList products={products} />
       </div>
       <Features />
-      <Carousel />
       <FooterFade />
     </>
   )
