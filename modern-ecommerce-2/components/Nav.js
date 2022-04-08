@@ -5,7 +5,8 @@ import { CartContext } from '../context/shopContext'
 import MiniCart from './MiniCart'
 import Announcement from './Announcement'
 import { ShoppingCartIcon } from '@heroicons/react/outline'
-import Logo from '../images/bb-logo.svg';
+import Logo from '../images/bb-logo.svg'
+import LogoDark from '../images/bb-logo-dark.svg'
 import { FaYinYang } from 'react-icons/fa'
 import { BsSunFill } from 'react-icons/bs'
 
@@ -59,7 +60,7 @@ useEffect(() => {
     <>
     <Announcement />
 
-    <header className={clientWindowHeight ? 'border-b sticky top-0 z-20 bg-gray-100 dark:bg-bg-green dark:text-new-beige backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
+    <header className={clientWindowHeight ? 'border-b dark:border-b-lighter-green drop-shadow-lg sticky top-0 z-20 bg-gray-100 dark:bg-bg-green dark:text-new-beige backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
       <div
         className="flex items-center justify-between h-24 mx-auto max-w-screen-2xl sm:px-6 lg:px-8"
       >
@@ -68,7 +69,11 @@ useEffect(() => {
           <Link href="/" passHref>
             <a className="flex cursor-pointer">
               <div className='relative w-[9.1rem] h-[3.1rem]'>
+                {
+                darkMode ? 
+                <Image alt="Bomb Botanicals Logo" src={LogoDark} layout="fill" objectFit="cover" /> : 
                 <Image alt="Bomb Botanicals Logo" src={Logo} layout="fill" objectFit="cover" />
+                }
               </div>
             </a>
           </Link>
@@ -77,7 +82,8 @@ useEffect(() => {
 
         <div className="flex items-center justify-end flex-1">
           <div className="flex items-center ml-8">
-
+            {!darkMode ? <div className='text-gray-900 hidden sm:inline'>Day Mode</div> : <div className='text-white hidden sm:inline'>Zen Mode</div>}
+            
             {/* theme switch */}
             <div className="form-switch flex flex-col justify-center ml-3 mr-3">
                 <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
@@ -96,9 +102,10 @@ useEffect(() => {
                     </g>
                   </svg>
 
-                  <span className="sr-only">Switch to light / zen mode version</span>
+                  <span className="sr-only">Switch to light or zen mode theme</span>
                 </label>
               </div>
+              
             
             <div className="flex items-center">
 
@@ -108,7 +115,13 @@ useEffect(() => {
                 className="cursor-pointer pl-2"
                 >
 
-                <ShoppingCartIcon className={clientWindowHeight ? 'inline text-gray-900 dark:text-white h-8 w-8' : 'inline text-gray-900 h-8 w-8'} /> <span className={clientWindowHeight ? 'inline font-bold text-gray-900 dark:text-white' : 'inline font-bold text-gray-900'}>Cart ({cartQuantity})</span>
+                  <ShoppingCartIcon className=
+                  {clientWindowHeight ? 'inline text-gray-900 dark:text-white h-8 w-8' : 'inline text-gray-900 h-8 w-8'} 
+                  /> 
+                  <span className={clientWindowHeight ? 'inline font-bold text-gray-900 dark:text-white' : 'inline font-bold text-gray-900'}>
+                    <span className='hidden sm:inline'>Cart</span> 
+                    <span className='text-xs vs:text-base'>({cartQuantity})</span>
+                  </span>
                 </a>
 
                 <MiniCart cart={cart} />
