@@ -5,8 +5,9 @@ import { CartContext } from '../context/shopContext'
 import MiniCart from './MiniCart'
 import Announcement from './Announcement'
 import { ShoppingCartIcon } from '@heroicons/react/outline'
-import ToggleIcons from './ToggleIcons'
 import Logo from '../images/bb-logo.svg';
+import { FaYinYang } from 'react-icons/fa'
+import { BsSunFill } from 'react-icons/bs'
 
 export default function Nav() {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext)
@@ -16,27 +17,27 @@ export default function Nav() {
     return (cartQuantity += item?.variantQuantity)
   })
 
-    // Handle light modes
-    const [darkMode, setDarkMode] = useState(() => {
-      while (typeof window !== 'undefined') {
-        let dark = localStorage.getItem('dark-mode');
-        if (dark === null) {
-          return true;
-        } else {
-          return dark === 'true';
-        }
-      }
-      
-    });
+ // Handle light modes
+ const [darkMode, setDarkMode] = useState(() => {
+  while (typeof window !== 'undefined') {
+    let dark = localStorage.getItem('dark-mode');
+    if (dark === null) {
+      return false;
+    } else {
+      return dark === 'true';
+    }
+  }
   
-    useEffect(() => {
-      localStorage.setItem('dark-mode', darkMode)
-      if (darkMode) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    }, [darkMode]);
+});
+
+useEffect(() => {
+  localStorage.setItem('dark-mode', darkMode)
+  if (darkMode) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}, [darkMode]);
 
     //nav opacity change on scroll
     const [clientWindowHeight, setClientWindowHeight] = useState(false);
@@ -53,15 +54,6 @@ export default function Nav() {
       window.addEventListener("scroll", handleScroll); 
       
     });
-
-    //theme switcher icon swap
-    const [active, setActive] = useState(false);
-
-    const handleChangeActive = () => {
-      setActive((previousStar) => {
-        return !previousStar;
-      });
-    };
 
   return (
     <>
@@ -86,18 +78,26 @@ export default function Nav() {
         <div className="flex items-center justify-end flex-1">
           <div className="flex items-center ml-8">
 
-            {/* theme switcher */}
-
-            
-
-              <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
-
-              <div id='swap' className='p-1 border-2 rounded-md border-gray-900 mr-5'>
+            {/* theme switch */}
+            <div className="form-switch flex flex-col justify-center ml-3 mr-3">
+                <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
                 <label className="relative" htmlFor="light-switch-desktop">
-                  <ToggleIcons active={active} handleChangeActive={handleChangeActive} />
+                  <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-100 dark:to-white shadow-sm z-10" aria-hidden="true"></span>
+
+                  <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                    <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
+                      <FaYinYang />
+                    </g>
+                  </svg>
+
+                  <svg className="absolute top-1 left-1" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                    <g className="fill-current text-white" fillRule="nonzero" opacity=".88">  
+                    <BsSunFill />
+                    </g>
+                  </svg>
+
                   <span className="sr-only">Switch to light / zen mode version</span>
                 </label>
-              
               </div>
             
             <div className="flex items-center">
