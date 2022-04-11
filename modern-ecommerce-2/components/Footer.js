@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../images/bb-logo.svg';
+import LogoDark from '../images/bb-logo-dark.svg'
 
 const navigation = [
    { name: 'About', href: '#' },

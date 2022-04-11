@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import WomanTakingOil from '../images/taking-cbd-oil.gif';
-import CbdOil from '../images/cbd-oil.webp';
+import WomanTakingOil from '../images/taking-cbd-oil.gif'
+import CbdOil from '../images/cbd-oil.webp'
+import Tabs from './Tabs'
 
 export default function OilProductSection() {
    
@@ -12,7 +13,7 @@ export default function OilProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={WomanTakingOil}
                   alt="woman taking cbd oil"
@@ -26,7 +27,8 @@ export default function OilProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">What is CBD?</h2>
+                  
+               <h2 className="text-2xl font-lora font-bold dark:text-bg-green sm:text-3xl">What is CBD?</h2>
       
                <p className="mt-4 text-gray-600">
                   Cannabidiol (commonly known as CBD) is one of the main cannabinoid compounds found within the Cannabis Sativa plant. It is mainly derived from hemp, which is a separate and distinct strain of the cannabis plant than marijuana. Despite CBD being found in both hemp and marijuana, they are not one and the same.
@@ -47,6 +49,10 @@ export default function OilProductSection() {
 
       </div>
 
+      <div className="py-16">
+         <Tabs />
+      </div>
+
       <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             
@@ -57,7 +63,7 @@ export default function OilProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-lora font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Our process begins in Oregon, where our hemp is organically grown on our farms. The utmost care is put into cultivating the plants without the use of any pesticides, herbicides or chemical fertilizers. That’s because we believe in only using sustainable and environmentally-conscious farming methods.
@@ -73,7 +79,7 @@ export default function OilProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-r-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={CbdOil}
                   alt="bottle of cbd oil"

@@ -82,13 +82,16 @@ useEffect(() => {
 
         <div className="flex items-center justify-end flex-1">
           <div className="flex items-center ml-8">
-            {!darkMode ? <div className='text-gray-900 hidden sm:inline'>Day Mode</div> : <div className='text-white hidden sm:inline'>Zen Mode</div>}
-            
+              {
+              !darkMode ? 
+              <div className='text-gray-900 hidden animate-bounceshort sm:inline'>Day Mode</div> : 
+              <div className='text-new-beige hidden animate-bounceshort sm:inline'>Zen Mode</div>
+              }
             {/* theme switch */}
             <div className="form-switch flex flex-col justify-center ml-3 mr-3">
                 <input type="checkbox" name="light-switch" id="light-switch-desktop" className="light-switch sr-only" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
                 <label className="relative" htmlFor="light-switch-desktop">
-                  <span className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-100 dark:to-white shadow-sm z-10" aria-hidden="true"></span>
+                  <span className="relative bg-gradient-to-t from-gray-100 to-new-beige dark:from-gray-100 dark:to-new-beige shadow-sm z-10" aria-hidden="true"></span>
 
                   <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
                     <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
@@ -116,9 +119,9 @@ useEffect(() => {
                 >
 
                   <ShoppingCartIcon className=
-                  {clientWindowHeight ? 'inline text-gray-900 dark:text-white h-8 w-8' : 'inline text-gray-900 h-8 w-8'} 
+                  {clientWindowHeight ? 'inline text-gray-900 dark:text-new-beige h-8 w-8' : 'inline text-gray-900 h-8 w-8'} 
                   /> 
-                  <span className={clientWindowHeight ? 'inline font-bold text-gray-900 dark:text-white' : 'inline font-bold text-gray-900'}>
+                  <span className={clientWindowHeight ? 'inline font-bold text-gray-900 dark:text-new-beige' : 'inline font-bold text-gray-900'}>
                     <span className='hidden sm:inline'>Cart</span> 
                     <span className='text-xs vs:text-base'>({cartQuantity})</span>
                   </span>

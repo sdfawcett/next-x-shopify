@@ -3,7 +3,7 @@ import { getProductsInCollection } from "../lib/shopify"
 import ProductList from '../components/ProductList'
 import Companies from '../components/Companies'
 import Hero from "../components/Hero"
-import Carousel from "../components/Carousel"
+import ImageGrid from "../components/ImageGrid"
 import FooterFade from "../components/FooterFade"
 import Tabs from "../components/Tabs"
 import AOS from 'aos';
@@ -29,6 +29,8 @@ export default function Home({products}) {
         <ProductList products={products} />
       </div>
       <Features />
+      <ImageGrid />
+      <Testimonials />
       <FooterFade />
     </>
   )

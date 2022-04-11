@@ -142,7 +142,7 @@ export default function ProductForm({ product }) {
       </div>
 
 
-        <div className="flex flex-wrap pt-5 px-8 lg:px-[4.5rem] space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-full mx-auto lg:mx-0">
+        <div className="flex flex-wrap pt-5 px-8 lg:px-[4.5rem] space-y-8 md:space-x-4 lg:space-x-8 max-w-4xl w-full mx-auto lg:mx-0">
           <div className="w-full p-4">
             <div className="flow-root">
               <div className="-my-8 divide-y divide-new-beige">

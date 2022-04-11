@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import CreamSmeared from '../images/cream-smear.webp';
-import CreamProcess from '../images/cream-process.webp';
+import CreamSmeared from '../images/cream-smear.webp'
+import CreamProcess from '../images/cream-process.webp'
+import Tabs from './Tabs'
 
 export default function CreamProductSection() {
    
@@ -12,7 +13,7 @@ export default function CreamProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={CreamSmeared}
                   alt="woman eating gummy worm"
@@ -26,7 +27,7 @@ export default function CreamProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">What is CBD?</h2>
+               <h2 className="text-2xl font-bold font-lora dark:text-bg-green sm:text-3xl">What is CBD?</h2>
       
                <p className="mt-4 text-gray-600">
                   Often referred to as CBD, cannabidiol is a naturally occurring substance found throughout various strains of the Cannabis Sativa plant. In specific, it tends to have the highest concentration in industrial hemp.
@@ -43,22 +44,15 @@ export default function CreamProductSection() {
                <p className="mt-4 text-gray-600">
                   As a result, CBD products have become a highly studied and discussed topic in science today.
                </p>
-
-               <p className="mt-4 text-gray-600">
-                  This product will not get you "high." 🎉
-               </p>
-      
-               <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-               >
-                  Get in Touch
-               </a>
                </div>
             </div>
          </div>
 
 
+      </div>
+
+      <div className="py-16">
+         <Tabs />
       </div>
 
       <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
@@ -71,7 +65,7 @@ export default function CreamProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-lora font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Quality has always been the number one priority at Penguin. That’s because we believe that our customer’s experience comes first.  So to make sure that our products live up to our standards, we get involved in every step of the process.
@@ -91,7 +85,7 @@ export default function CreamProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-r-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={CreamProcess}
                   alt="hand getting cbd cream from jar"

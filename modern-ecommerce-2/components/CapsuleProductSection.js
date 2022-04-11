@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import Capsules from '../images/cbd-caps.webp';
-import CapsulesTwo from '../images/cbd-caps-2.webp';
+import Capsules from '../images/cbd-caps.webp'
+import CapsulesTwo from '../images/cbd-caps-2.webp'
+import Tabs from './Tabs'
 
 export default function CapsuleProductSection() {
    
@@ -17,7 +18,7 @@ export default function CapsuleProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
+               <h2 className="text-2xl font-bold font-lora dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
                   Our approach to CBD starts at the root. We make sure that all of our hemp is grown using sustainable and environmentally-friendly practices. So not only is it non-GMO, but pesticide and herbicide free as well.
@@ -37,7 +38,7 @@ export default function CapsuleProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-r-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={Capsules}
                   alt="cbd capsules"
@@ -48,6 +49,9 @@ export default function CapsuleProductSection() {
          </div>
       </div>
 
+      <div className="py-16">
+         <Tabs />
+      </div>
 
       <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
 
@@ -55,7 +59,7 @@ export default function CapsuleProductSection() {
             <div className="relative z-10 lg:py-16">
                <div className="relative h-64 sm:h-80 lg:h-full">
                <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="rounded-lg absolute inset-0 object-cover w-full h-full"
                   layout='fill'
                   src={CapsulesTwo}
                   alt="cbd capsules"
@@ -69,7 +73,7 @@ export default function CapsuleProductSection() {
                ></span>
       
                <div className="p-8 sm:p-16 lg:p-24">
-               <h2 className="text-2xl font-bold dark:text-bg-green sm:text-3xl">Calm, in a bottle.</h2>
+               <h2 className="text-2xl font-bold font-lora dark:text-bg-green sm:text-3xl">Calm, in a bottle.</h2>
       
                <p className="mt-4 text-gray-600">
                   Our CBD capsules come in a 30-count bottle. They are soft gel capsules that can be easily swallowed and ingested. Each capsule packs a potent 25mg dose of our broad-spectrum oil. That means you get a precise dosage every time.

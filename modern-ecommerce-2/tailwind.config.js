@@ -130,7 +130,9 @@ module.exports = {
       animation: {
         float: 'float 5s ease-in-out infinite',
         marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite'
+        marquee2: 'marquee2 25s linear infinite',
+        // Bounces for a total of 5 seconds
+        bounceshort: 'bounce 1s ease-in-out 5',
       },
       keyframes: {
         float: {
