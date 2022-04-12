@@ -1,17 +1,19 @@
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
+import dynamic from 'next/dynamic'
 import BackButton from './BackButton'
 import ProductForm from './ProductForm'
-import RecommendedList from './RecommendedList'
-import OilProductSection from './OilProductSection'
-import CreamProductSection from './CreamProductSection'
-import DogOilProductSection from './DogOilProductSection'
-import CatOilProductSection from './CatOilProductSection'
-import DogTreatProductSection from './DogTreatProductSection'
-import CatTreatProductSection from './CatTreatProductSection'
-import GummiesProductSection from './GummiesProductSection'
-import CapsuleProductSection from './CapsuleProductSection'
+
+const DynamicRecommendedList = dynamic(() => import('./RecommendedList'))
+const DynamicOilProductSection = dynamic(() => import('./OilProductSection'))
+const DynamicCreamProductSection = dynamic(() => import('./CreamProductSection'))
+const DynamicDogOilProductSection = dynamic(() => import('./DogOilProductSection'))
+const DynamicCatOilProductSection = dynamic(() => import('./CatOilProductSection'))
+const DynamicDogTreatProductSection = dynamic(() => import('./DogTreatProductSection'))
+const DynamicCatTreatProductSection = dynamic(() => import('./CatTreatProductSection'))
+const DynamicGummiesProductSection = dynamic(() => import('./GummiesProductSection'))
+const DynamicCapsuleProductSection = dynamic(() => import('./CapsuleProductSection'))
 
 export default function ProductPageContent({ product }) {
 
@@ -61,10 +63,10 @@ export default function ProductPageContent({ product }) {
       </div>
     </div>
 
-      {cbdOil ? <OilProductSection /> : cbdCream ? <CreamProductSection /> : dogOil ? <DogOilProductSection /> : catOil ? <CatOilProductSection /> : dogTreat ? <DogTreatProductSection /> : catTreat ? <CatTreatProductSection /> : cbdGummy ? <GummiesProductSection /> : cbdCapsules ? <CapsuleProductSection /> : <OilProductSection />}
+      {cbdOil ? <DynamicOilProductSection /> : cbdCream ? <DynamicCreamProductSection /> : dogOil ? <DynamicDogOilProductSection /> : catOil ? <DynamicCatOilProductSection /> : dogTreat ? <DynamicDogTreatProductSection /> : catTreat ? <DynamicCatTreatProductSection /> : cbdGummy ? <DynamicGummiesProductSection /> : cbdCapsules ? <DynamicCapsuleProductSection /> : <DynamicOilProductSection />}
 
       
-      <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
+      <DynamicRecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
     </div>
   )
 }

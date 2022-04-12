@@ -1,14 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 import { getProductsInCollection } from "../lib/shopify"
-import ProductList from '../components/ProductList'
+import dynamic from 'next/dynamic'
 import Companies from '../components/Companies'
 import Hero from "../components/Hero"
-import ImageGrid from "../components/ImageGrid"
-import FooterFade from "../components/FooterFade"
-import Tabs from "../components/Tabs"
-import AOS from 'aos';
-import Testimonials from '../components/Testimonials';
-import Features from '../components/Features';
+import AOS from 'aos'
+
+const DynamicProductList = dynamic(() => import('../components/ProductList'))
+const DynamicImageGrid = dynamic(() => import('../components/ImageGrid')) 
+const DynamicFeatures = dynamic(() => import('../components/Features')) 
+const DynamicTestimonials = dynamic(() => import('../components/Testimonials')) 
+const DynamicFooterFade = dynamic(() => import('../components/FooterFade')) 
 
 export default function Home({products}) {
 
@@ -26,12 +27,12 @@ export default function Home({products}) {
       <Hero />
       <Companies />
       <div className="text-3xl">
-        <ProductList products={products} />
+        <DynamicProductList products={products} />
       </div>
-      <Features />
-      <ImageGrid />
-      <Testimonials />
-      <FooterFade />
+      <DynamicFeatures />
+      <DynamicImageGrid />
+      <DynamicTestimonials />
+      <DynamicFooterFade />
     </>
   )
 }

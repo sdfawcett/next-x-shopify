@@ -1,6 +1,8 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 import Nav from './Nav'
-import Footer from './Footer'
+
+const DynamicFooter = dynamic(() => import('./Footer'))
 
 export default function Layout({ children }) {
 
@@ -14,7 +16,7 @@ export default function Layout({ children }) {
             {children}
         </main>
         
-        <Footer />
+        <DynamicFooter />
       </div>
     </div>
   )
