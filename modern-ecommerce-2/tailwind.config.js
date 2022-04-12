@@ -78,6 +78,7 @@ module.exports = {
         'darker-green': '#3A5A40',
         'lightest-green': '#A3B18A',
         'new-beige': '#DAD7CD',
+        'new-gold': '#f9bc60',
         'cool-gray': '#687275',
         'dark-blue': '#3E3649',
         'contrast-gray': '#F2F0F4',

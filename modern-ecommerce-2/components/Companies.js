@@ -34,21 +34,22 @@ export default function Companies() {
                </span>
 
                <span className="mx-28 text-xl text-center">
-                  "World's finest CBD brand for relaxation."<br />
+                  "The CBD brand at the top of our list for a number of reasons."<br />
                   <Image src={ViceLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "The hottest CBD brand around right now."<br />
+                  "FAB CBD continues to push the envelope when it comes to product design and development."<br />
                   <Image src={NewYorkerLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "Thanks to Bomb Botanicals, we're living our best lives."<br />
+                  "In comparison to other CBD brands, FAB CBD’s prices are comparable or more affordable."<br />
                   <Image src={EntertainmentWeeklyLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "One of the best THC-free CBD oils that we've ever tried."<br />
+                  "Affordable prices for strong doses."<br />
                   <Image src={NewYorkTimesLogo} height={40} width={100} />
                </span>
+
                <span className="mx-28 text-xl text-center">
                   "World's finest CBD brand for relaxation."<br />
                   <Image src={RollingStoneLogo} height={40} width={100} />
@@ -67,21 +68,22 @@ export default function Companies() {
                </span>
 
                <span className="mx-28 text-xl text-center">
-                  "World's finest CBD brand for relaxation."<br />
+                  "The CBD brand at the top of our list for a number of reasons."<br />
                   <Image src={ViceLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "The hottest CBD brand around right now."<br />
+                  "FAB CBD continues to push the envelope when it comes to product design and development."<br />
                   <Image src={NewYorkerLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "Thanks to Bomb Botanicals, we're living our best lives."<br />
+                  "In comparison to other CBD brands, FAB CBD’s prices are comparable or more affordable."<br />
                   <Image src={EntertainmentWeeklyLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "One of the best THC-free CBD oils that we've ever tried."<br />
+                  "Affordable prices for strong doses."<br />
                   <Image src={NewYorkTimesLogo} height={40} width={100} />
                </span>
+
                <span className="mx-28 text-xl text-center">
                   "World's finest CBD brand for relaxation."<br />
                   <Image src={RollingStoneLogo} height={40} width={100} />
@@ -100,54 +102,22 @@ export default function Companies() {
                </span>
 
                <span className="mx-28 text-xl text-center">
-                  "World's finest CBD brand for relaxation."<br />
+                  "The CBD brand at the top of our list for a number of reasons."<br />
                   <Image src={ViceLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "The hottest CBD brand around right now."<br />
+                  "FAB CBD continues to push the envelope when it comes to product design and development."<br />
                   <Image src={NewYorkerLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "Thanks to Bomb Botanicals, we're living our best lives."<br />
+                  "In comparison to other CBD brands, FAB CBD’s prices are comparable or more affordable."<br />
                   <Image src={EntertainmentWeeklyLogo} height={40} width={100} />
                </span>
                <span className="mx-28 text-xl text-center">
-                  "One of the best THC-free CBD oils that we've ever tried."<br />
+                  "Affordable prices for strong doses."<br />
                   <Image src={NewYorkTimesLogo} height={40} width={100} />
                </span>
-               <span className="mx-28 text-xl text-center">
-                  "World's finest CBD brand for relaxation."<br />
-                  <Image src={RollingStoneLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "The hottest CBD brand around right now."<br />
-                  <Image src={MaximLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "Thanks to Bomb Botanicals, we're living our best lives."<br />
-                  <Image src={TimeLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "One of the best THC-free CBD oils that we've ever tried."<br />
-                  <Image src={VarietyLogo} height={40} width={100} />
-               </span>
-
-               <span className="mx-28 text-xl text-center">
-                  "World's finest CBD brand for relaxation."<br />
-                  <Image src={ViceLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "The hottest CBD brand around right now."<br />
-                  <Image src={NewYorkerLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "Thanks to Bomb Botanicals, we're living our best lives."<br />
-                  <Image src={EntertainmentWeeklyLogo} height={40} width={100} />
-               </span>
-               <span className="mx-28 text-xl text-center">
-                  "One of the best THC-free CBD oils that we've ever tried."<br />
-                  <Image src={NewYorkTimesLogo} height={40} width={100} />
-               </span>
+               
             </Marquee>
 
          </div>

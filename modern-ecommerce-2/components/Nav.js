@@ -20,7 +20,7 @@ export default function Nav() {
 
  // Handle light modes
  const [darkMode, setDarkMode] = useState(() => {
-  while (typeof window !== 'undefined') {
+  while (typeof window !== 'undefined' && window.localStorage) {
     let dark = localStorage.getItem('dark-mode');
     if (dark === null) {
       return false;
@@ -83,9 +83,9 @@ useEffect(() => {
         <div className="flex items-center justify-end flex-1">
           <div className="flex items-center ml-8">
               {
-              !darkMode ? 
-              <div className='text-gray-900 hidden animate-bounceshort sm:inline'>Day Mode</div> : 
-              <div className='text-new-beige hidden animate-bounceshort sm:inline'>Zen Mode</div>
+              darkMode ? 
+              <div className='hidden animate-bounceshort sm:inline'>Zen Mode</div> :
+              <div className='hidden animate-bounceshort sm:inline'>Day Mode</div>
               }
             {/* theme switch */}
             <div className="form-switch flex flex-col justify-center ml-3 mr-3">
