@@ -106,7 +106,7 @@ return (
                                     className="font-medium text-gray-500 hover:text-gray-800"
                                     onClick={() => removeCartItem(product.id)}
                                     >
-                                      <svg width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                                      <svg width={44} height={24} viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
                                         <g className="fill-current" fillRule="nonzero">
                                           <TrashIcon />
                                         </g>

@@ -93,13 +93,13 @@ useEffect(() => {
                 <label className="relative" htmlFor="light-switch-desktop">
                   <span className="relative bg-gradient-to-t from-gray-100 to-new-beige dark:from-gray-100 dark:to-new-beige shadow-sm z-10" aria-hidden="true"></span>
 
-                  <svg className="absolute top-1 left-6" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-1 left-6" width={44} height={24} viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
                     <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
                       <FaYinYang />
                     </g>
                   </svg>
 
-                  <svg className="absolute top-1 left-1" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-1 left-1" width={44} height={24} viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
                     <g className="fill-current text-white" fillRule="nonzero" opacity=".88">  
                     <BsSunFill />
                     </g>
