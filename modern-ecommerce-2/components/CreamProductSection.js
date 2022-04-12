@@ -7,7 +7,7 @@ export default function CreamProductSection() {
    
   return (
    <section>
-      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+      <div className="py-16 mx-auto max-w-screen-2xl">
 
          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             <div className="relative z-10 lg:py-16">
@@ -68,7 +68,7 @@ export default function CreamProductSection() {
                <h2 className="text-2xl font-lora font-bold dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
-                  Quality has always been the number one priority at Penguin. That’s because we believe that our customer’s experience comes first.  So to make sure that our products live up to our standards, we get involved in every step of the process.
+                  Quality has always been our number one priority. That’s because we believe that our customer’s experience comes first.  So to make sure that our products live up to our standards, we get involved in every step of the process.
                </p>
 
                <p className="mt-4 text-gray-600">

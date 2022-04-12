@@ -8,7 +8,7 @@ export default function CatOilProductSection() {
   return (
    <section>
 
-      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+      <div className="py-16 mx-auto max-w-screen-2xl">
          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             
       
@@ -21,7 +21,7 @@ export default function CatOilProductSection() {
                <h2 className="text-2xl font-bold font-lora dark:text-bg-green sm:text-3xl">Our Process</h2>
       
                <p className="mt-4 text-gray-600">
-                  Our team has spent countless hours working with cat owners and vets to figure out how best to bring the joys of CBD to our beloved felines. We started off with an understanding that CBD products impact dogs’ nervous systems in much the same way that they do humans. Meaning that they instill a sense of calm while reducing pain signals from throughout the body.
+                  Our team has spent countless hours working with cat owners and vets to figure out how best to bring the joys of CBD to our beloved felines. We started off with an understanding that CBD products impact cats' nervous systems in much the same way that they do humans. Meaning that they instill a sense of calm while reducing pain signals from throughout the body.
                </p>
 
                <p className="mt-4 text-gray-600">
@@ -33,7 +33,7 @@ export default function CatOilProductSection() {
                </p>
 
                <p className="mt-4 text-gray-600">
-                  It is with that knowledge in mind that we have crafted this product, perfect for dogs of all shapes and sizes. Our production method, which uses the latest in effective CO2 extraction to produce a healthy and all-natural full-spectrum CBD oil product, has everything you need to help your cat live his best life.
+                  It is with that knowledge in mind that we have crafted this product, perfect for cats of all shapes and sizes. Our production method, which uses the latest in effective CO2 extraction to produce a healthy and all-natural full-spectrum CBD oil product, has everything you need to help your cat live his best life.
                </p>
       
                </div>
@@ -89,7 +89,7 @@ export default function CatOilProductSection() {
                </p>
 
                <p className="mt-4 text-gray-600">
-                  It is always recommended to talk to your dog's veterinarian first before you start giving CBD. Their guidance should help with determining the best amount for your cat.
+                  It is always recommended to talk to your cat's veterinarian first before you start giving CBD. Their guidance should help with determining the best amount for your cat.
                </p>
       
                </div>

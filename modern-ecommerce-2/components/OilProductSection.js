@@ -7,7 +7,7 @@ export default function OilProductSection() {
    
   return (
    <section>
-      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+      <div className="py-16 mx-auto max-w-screen-2xl">
 
          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             <div className="relative z-10 lg:py-16">

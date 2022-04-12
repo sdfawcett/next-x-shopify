@@ -135,14 +135,14 @@ export default function ProductForm({ product }) {
             </button>
         }
             <Link href="/#product-section">
-              <button className="rounded z-10 text-gray-900 font-bold px-2 py-3 mt-3 border-2 border-gray-900 dark:text-white dark:border-new-beige md:w-4/5">
+              <button className="rounded z-10 w-full text-gray-900 font-bold px-2 py-3 mt-3 border-2 border-gray-900 dark:text-white dark:border-new-beige md:w-4/5">
                 Continue Shopping
               </button>
             </Link>
       </div>
 
 
-        <div className="flex flex-wrap pt-5 px-8 lg:px-[4.5rem] space-y-8 md:space-x-4 lg:space-x-8 max-w-4xl w-full mx-auto lg:mx-0">
+        <div className="flex flex-wrap pt-5 px-0 sm:px-8 lg:px-[4.5rem] space-y-8 md:space-x-4 lg:space-x-8 max-w-4xl w-full mx-auto lg:mx-0">
           <div className="w-full p-4">
             <div className="flow-root">
               <div className="-my-8 divide-y divide-new-beige">

@@ -7,13 +7,13 @@ export default function Testimonials() {
 
                {/* Section header */}
                <div data-aos="fade-down" className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-               <h1 className="h2 font-lora text-gray-900 mb-4 dark:text-new-beige">From rough design files, to powerful products</h1>
-               <p className="text-xl text-gray-900 dark:text-new-beige">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+               <h1 className="h2 font-lora text-gray-900 mb-4 dark:text-new-beige">Great Things People Say About Us</h1>
+               <p className="text-xl text-gray-900 dark:text-new-beige">We're honored to be your source for the finest, organically grown US hemp with great service to match!</p>
                </div>
 
             </div>
 
-            <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div id="reviews" className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
                <blockquote data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
                   <div>
                      <div className="flex space-x-0.5 text-contrast-gray dark:text-bg-green">
@@ -45,16 +45,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">So engaging and friendly!</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "They understand that customer satisfaction matters. That's not a real common practice in businesses these days so I keep coming back."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Pam Z</footer>
                </blockquote>
 
                <blockquote data-aos-delay="400" data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
@@ -88,16 +87,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Beyond fabulous</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "Their customer service is the best, and the CBD Cream is life-changing. I don't go anywhere without it."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Lisa G.</footer>
                </blockquote>
 
                <blockquote data-aos-delay="500" data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
@@ -131,16 +129,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">I love every BB product I've ever tried!</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "The gummies are my absolute favorite and I take advantage of their great sales whenever I can. Shipping is always super quick and customer service is always very prompt in answering any questions."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Cecelia A.</footer>
                </blockquote>
 
                <blockquote data-aos-delay="600" data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
@@ -174,16 +171,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">My life has changed since finding BB</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "I did a ton of research when I was looking for the right CBD company. The quality of the products, and the company itself, continue to exceed my expectations."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Alyssa J.</footer>
                </blockquote>
 
                <blockquote data-aos-delay="700" data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
@@ -217,16 +213,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold  text-contrast-gray dark:text-bg-green sm:text-2xl">BB has the best support team</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "BB always has the best support team working for you and willing to above and beyond to help."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Sheila K.</footer>
                </blockquote>
 
                <blockquote data-aos-delay="800" data-aos="flip-up" className="flex flex-col justify-between h-full p-12 bg-darker-green dark:bg-new-beige shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black rounded-sm dark:rounded-bl-3xl dark:rounded-tr-3xl">
@@ -260,16 +255,15 @@ export default function Testimonials() {
                      </div>
 
                      <div className="mt-4">
-                        <h5 className="text-xl font-bold text-contrast-gray dark:text-bg-green sm:text-2xl">Lorem ipsum dolor sit amet.</h5>
+                        <h5 className="text-xl font-bold text-contrast-gray dark:text-bg-green sm:text-2xl">My favorite is the CBD Oil, and my dog loves the CBD dog treats</h5>
 
                         <p className="mt-4  text-contrast-gray dark:text-bg-green">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque recusandae dolorum porro, quasi sunt
-                        necessitatibus dolorem ab laudantium vel.
+                        "I get such a restful sleep each time I take BB CBD oil. And my dog's arthritis symptoms have noticeably improved since I started giving her BB CBD Dog Treats."
                         </p>
                      </div>
                   </div>
 
-                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Eddie Murphy</footer>
+                  <footer className="mt-8  text-contrast-gray dark:text-bg-green">Claudia F.</footer>
                </blockquote>
               
             </div>

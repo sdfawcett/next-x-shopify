@@ -39,9 +39,9 @@ export default function ProductPageContent({ product }) {
   return (
     <div>
       
-      <div className="flex flex-col lg:flex-row mx-14 mt-28 mb-10">
+      <div className="flex flex-col lg:flex-row mx-0 sm:mx-14 mt-28 mb-10">
       
-          <div className="relative w-full bg-no-repeat lg:w-1/2 min-h-[80vh] h-[80vh]">
+          <div className="relative w-full h-[50vh] min-h-[50vh] mb-8 bg-no-repeat lg:w-1/2 lg:h-[80vh] lg:mb-0">
           <BackButton />
             <Swiper
               style={{ '--swiper-navigation-color': '#000', '--swiper-pagination-color': '#000' }}

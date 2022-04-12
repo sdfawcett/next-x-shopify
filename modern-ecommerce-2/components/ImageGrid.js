@@ -23,7 +23,7 @@ export default function ImageGrid() {
             <div data-aos="flip-up" className="grid-img cursor-pointer w-full rounded">
                <Image className="block object-cover object-center w-full h-full rounded-lg" src={CarouselImage01} alt="berry cbd oil" />
             </div>
-            <div data-aos-delay="400" data-aos="flip-up" className="grid-img cursor-pointer w-full col-span-2 row-span-2 rounded">
+            <div className="grid-img cursor-pointer w-full col-span-2 row-span-2 rounded">
                <Image className="block object-cover object-center w-full h-full rounded-lg" src={CarouselImage02} alt="berry cbd oil" />
             </div>
             <div data-aos-delay="500" data-aos="flip-up" className="grid-img cursor-pointer w-full rounded">
