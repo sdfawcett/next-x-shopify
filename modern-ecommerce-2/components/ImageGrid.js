@@ -10,7 +10,7 @@ import CarouselImage06 from '../images/which-is-your-go-to.webp'
 export default function ImageGrid() {
   return (
    <section id='social-image-grid' className='pt-20'>
-      <h2 data-aos="fade-left" className="z-10 text-3xl uppercase font-bold sm:text-4xl font-lora text-center">
+      <h2 data-aos="fade-left" className="z-10 text-2xl uppercase font-bold sm:text-4xl font-lora text-center">
          @bombbotanicals
       </h2>
    
