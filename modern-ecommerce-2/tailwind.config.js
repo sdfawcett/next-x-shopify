@@ -12,7 +12,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'xs': '500px',
         'vs': '400px',
+        'xxs': '320px',
         ...defaultTheme.screens,
       },
       boxShadow: {

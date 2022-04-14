@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react'
 export default function ProductOptions({ name, values, selectedOptions, setOptions, productInventory, selectedVariant }) {
   
   return (
-    <fieldset className="mt-3 mb-3 z-10">
+    <fieldset className="mt-3 mb-3 z-10 mx-4 xs:mx-0">
       <legend className="text-xl dark:text-new-beige font-semibold">{name}</legend>
-      <div className="inline-flex items-center flex-nowrap">
+      <div className="inline-flex items-center flex-wrap">
         {
           values.map(value => {
             const id = `option-${name}-${value}`

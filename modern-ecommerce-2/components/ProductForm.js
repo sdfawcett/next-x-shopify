@@ -28,10 +28,8 @@ export default function ProductForm({ product }) {
 
   const [available, setAvailable] = useState(true)
 
-  const [openTab, setOpenTab] = useState(1);
 
-
-  const { addToCart } = useContext(CartContext)
+  const { cart, addToCart } = useContext(CartContext)
 
   const allVariantOptions = product.variants.edges?.map(variant => {
     const allOptions = {}
@@ -48,7 +46,8 @@ export default function ProductForm({ product }) {
       options: allOptions,
       variantTitle: variant.node.title,
       variantPrice: variant.node.priceV2.amount,
-      variantQuantity: 1
+      variantQuantity: 1,
+      newVariantQuantity: 1
     }
   })
 
@@ -59,6 +58,7 @@ export default function ProductForm({ product }) {
 
   const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0])
   const [selectedOptions, setSelectedOptions] = useState(defaultValues)
+  const [counter, setCounter] = useState(1)
 
   function setOptions(name, value) {
     setSelectedOptions(prevState => {
@@ -73,8 +73,77 @@ export default function ProductForm({ product }) {
     allVariantOptions.map(item => {
       if (JSON.stringify(item.options) === JSON.stringify(selection)) {
         setSelectedVariant(item)
+        setCounter(1)
       }
     })
+  }
+
+  const increment = () => {
+    counter < 9 ? counter += 1 : null
+    setCounter(counter)
+
+    cart.map(_ => {
+        if ((cart.includes(selectedVariant)) && counter < 9) {
+            selectedVariant.newVariantQuantity = counter
+            setCounter(selectedVariant.newVariantQuantity)
+        } else if ((!cart.includes(selectedVariant)) && counter < 9) {
+            selectedVariant.variantQuantity = counter
+            setCounter(selectedVariant.variantQuantity)
+        }
+    })
+    if (cart.length === 0) {
+        selectedVariant.variantQuantity = counter
+        setCounter(selectedVariant.variantQuantity)
+    }
+}
+
+  const decrement = () => {
+      counter > 1 ? counter -= 1 : null
+      setCounter(counter)
+
+      cart.map(_ => {
+          if ((cart.includes(selectedVariant)) && counter > 1) {
+              selectedVariant.newVariantQuantity = counter
+              setCounter(selectedVariant.newVariantQuantity)
+          } else if ((!cart.includes(selectedVariant)) && counter > 1) {
+              selectedVariant.variantQuantity = counter
+              setCounter(selectedVariant.variantQuantity)
+          }
+      })
+      if (cart.length === 0) {
+          selectedVariant.variantQuantity = counter
+          setCounter(selectedVariant.variantQuantity)
+      }
+  }
+
+  const handleChange = (e) => {
+      counter = Number(e.target.value);
+      setCounter(counter)
+
+      cart.map(_ => {
+          if (cart.includes(selectedVariant)) {
+              selectedVariant.newVariantQuantity = counter
+              setCounter(selectedVariant.newVariantQuantity)
+          } else if (!cart.includes(selectedVariant)) {
+              selectedVariant.variantQuantity = counter
+              setCounter(selectedVariant.variantQuantity)
+          }
+      })
+      if (cart.length === 0) {
+          selectedVariant.variantQuantity = counter
+          setCounter(selectedVariant.variantQuantity)
+      }
+      if (e.key === 0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 ) {
+          e.target.blur();
+      }
+      if (isNaN(counter) || (e.target.value == 0)) {
+          e.target.value = 1
+          parseInt(e.target.value)
+          counter = 1
+          selectedVariant.variantQuantity = counter
+          selectedVariant.newVariantQuantity = counter
+          setCounter(1)
+      }
   }
 
 
@@ -121,11 +190,30 @@ export default function ProductForm({ product }) {
             />
           ))
         }
+
+      <legend className='text-xl font-semibold mt-6'>Quantity</legend>
+      <div className="z-10 shadow-md rounded-sm inline-block my-2 w-[150px]">
+        <button 
+        onClick={decrement}
+        className='text-white dark:text-bg-green highlight-removal transition-all ease-in-out duration-100 px-3 rounded-l border border-gray-900 py-1 font-semibold bg-lighter-green dark:bg-lightest-green active:bg-gray-900 active:text-white'>
+          &mdash;
+        </button>
+        
+        <input id="input" inputMode='numeric' pattern="[0-9]*" onFocus={(e) => e.target.value = ""} onBlur={(e) => e.target.value = counter} className="text-black transition-all ease-in-out duration-100 relative focus:outline-2 outline-blue-400 caret-indigo-400 text-center rounded-none w-16 py-1" type="text"  value={counter} onChange={handleChange} />
+        
+        <button 
+        onClick={increment}
+        className='text-white dark:text-bg-green highlight-removal transition-all ease-in-out duration-100 px-3 rounded-r border border-gray-900 py-1 font-semibold bg-lighter-green dark:bg-lightest-green active:bg-gray-900 active:text-white'>
+          &#xff0b;
+        </button>  
+      </div>
+
         {
           available ?
             <button
               onClick={() => {
                 addToCart(selectedVariant)
+                setCounter(1)
               }}
               className="bg-lighter-green z-10 w-full rounded font-bold shadow-[0_4px_0_0_rgba(0,0,0,1)] border-2 border-black text-white px-2 py-3 mt-3 dark:bg-transparent dark:border-2 dark:border-new-beige dark:hover:bg-lightest-green dark:hover:text-bg-green md:w-4/5">Add To Cart
             </button> :
