@@ -60,7 +60,7 @@ useEffect(() => {
     <>
     <Announcement />
 
-    <header className={clientWindowHeight ? 'border-b dark:border-b-lighter-green drop-shadow-lg sticky top-0 z-20 bg-gray-100 dark:bg-bg-green dark:text-new-beige backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 z-20 fixed inset-x-0 bg-transparent'}>
+    <header className={clientWindowHeight ? 'border-b px-2.5 dark:border-b-lighter-green drop-shadow-lg sticky top-0 z-20 bg-gray-100 dark:bg-bg-green dark:text-new-beige backdrop-filter backdrop-blur-lg bg-opacity-75 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-75' : 'top-11 px-2.5 z-20 fixed inset-x-0 bg-transparent'}>
       <div
         className="flex items-center justify-between h-24 mx-auto max-w-screen-2xl sm:px-6 lg:px-8"
       >

@@ -1,14 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../images/bb-logo.svg';
-import LogoDark from '../images/bb-logo-dark.svg'
-
-const navigation = [
-   { name: 'About', href: '#' },
-   { name: 'Shop', href: '#' },
-   { name: 'Jobs', href: '#' },
-   { name: 'Terms and Conditions', href: '#' }
- ]
  
  export default function Footer() {
    return (
@@ -115,10 +107,18 @@ const navigation = [
                     </p>
 
                     <nav className="flex flex-col mt-2 space-y-1 text-sm text-gray-400">
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Oil </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Gummies </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Cream </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Dog Treats </a>
+                        <Link href="/products/cbd-oil">
+                            <a className="hover:opacity-75">CBD Oil</a>
+                        </Link>
+                        <Link href="/products/cbd-gummies">
+                            <a className="hover:opacity-75">CBD Gummies</a>
+                        </Link>
+                        <Link href="/products/cbd-cream">
+                            <a className="hover:opacity-75">CBD Cream</a>
+                        </Link>
+                        <Link href="/products/cbd-dog-treats">
+                            <a className="hover:opacity-75">CBD Dog Treats</a>
+                        </Link>
                     </nav>
                     </div>
 
@@ -127,10 +127,18 @@ const navigation = [
                     <br/>
 
                     <nav className="flex flex-col mt-2 space-y-1 text-sm text-gray-400">
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Cat Treats </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> CBD Capsules </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> Dog CBD Oil </a>
-                        <a className="hover:opacity-75" href="javascript:void(0);"> Cat CBD Oil </a>
+                        <Link href="/products/cbd-cat-treats">
+                            <a className="hover:opacity-75">CBD Cat Treats</a>
+                        </Link>
+                        <Link href="/products/cbd-capsules">
+                            <a className="hover:opacity-75">CBD Capsules</a>
+                        </Link>
+                        <Link href="/products/dog-cbd-oil">
+                            <a className="hover:opacity-75">Dog CBD Oil</a>
+                        </Link>
+                        <Link href="/products/cat-cbd-oil">
+                            <a className="hover:opacity-75">Cat CBD Oil</a>
+                        </Link>
                     </nav>
                     </div>
                 </div>
